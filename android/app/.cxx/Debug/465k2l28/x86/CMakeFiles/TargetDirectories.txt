@@ -1,0 +1,2 @@
+C:/Users/jingy/Projects/Flutter/assignment_tripmate/android/app/.cxx/Debug/465k2l28/x86/CMakeFiles/edit_cache.dir
+C:/Users/jingy/Projects/Flutter/assignment_tripmate/android/app/.cxx/Debug/465k2l28/x86/CMakeFiles/rebuild_cache.dir

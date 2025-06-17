@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "114272095640",
+    "project_id": "tripmate-4029c",
+    "storage_bucket": "tripmate-4029c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114272095640:android:8caccda9c3b67d1e5e2fed",
+        "android_client_info": {
+          "package_name": "com.example.assignment_tripmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ZMOoBkPxmx9iDganHG1RJbudWuXMSes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "authentic-genre-435809-t3",
+  "private_key_id": "4b220fa89f18598708adfbf4ead2a421efdb3229",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCOz86KGNinrXTn\navLumsk1XklVN4SA8pLnqstcF4dTI7ybBf9pehuIcfef3ftDrb7Qe4iLC5KDbvBd\nqCneMJNJrq7/qo0OfwPsvW8hP1v3PLJxP+nimcugpBfS5goJ5BPqKMc2nrd71enz\n7VgAd9JJzgy0NqXIrSicVKE4JNvhZcIdfJQ93fDqKl+yTQe7OuesPqhjg3z5e5hY\nf/eEtc1U9zRz30DQODSWqdGWCTfcWEoGea052lBlqRsuEVqGUdFJN/O4o4M4PWj9\nuYkjnZhMxIQ3/SaQ/qcjGuBK6vb8Mldkm+dipv2nfPOGCYRcft76ZBUoBVEDEPfQ\nPzhm7/3rAgMBAAECggEAML20+MX9H9FgHmGOkygJ9yh8b9S4aQghYmcU7BPtsE74\nnpI/92BhCEMZaBsrmBAzGVWoJwimkywoZlawH3DFvDad7I1pgiKQlNqclKTavvmc\nz3EoYpnp+SQ4K1cu4uxQbbFIOJiX9/Bs3j9JszMx9tWX2WPzVhffTefGdHKEBxug\nzX4gE3Ybubet4jEK+9NYlXO7ppObGz3ZMB0s67kNoBpVYoruuz75sifZ+TbTuED8\nVYg8kUidyzSK7j7byf1IDsfH44hFxdUuUw7zlx7ZkS/X+HjEa71jjegySi5vERO4\n2JQcnuLNsLDKuvURhYm/OCV+0gHmCBqrVeEoBhjh0QKBgQC//WInqZJBRzdIqoIU\nonwMLsNsnK7/vnLfv+I0pIopNWTaf6+2yLQZIuvi/aHc04YF4tNqgvnPNyLwTr8B\n5DLPy5Yoyw+NpxXbJu5KkjO2ebs/P3fcsaaNXkipOYH28NR9pegZdDGNpqtNajcl\npvEHLstzWniaEkJ0k0tsetvGmwKBgQC+bQESgTbkzp0v4SBG8JeSpk7055PVUfWS\n+HcoAC1dhxaLFuO6mcQQRMglNgGQHcOAOepNEPinLogckXxE/r8CRLA5Hl3txYok\nGZuS05uDEb7PnqlvBIamiocqtWfRh/SbeVhWh5oPq1FlJhK+XG1qcwUARvDAMDXu\nlPRS+9ty8QKBgQClJ9qdFfFbuGClYRBfodsmO8AfGbYtCG8XbaCw+m5jvqvQjpDg\no0zSZskWzmrEZS3guFx4Ps2Y5OxoXsVPYjgXqyG0W+I4T+isSpQokBZuPc/HO9jn\nf+cvq1DESlUz0b5pjCPaaasLGLo58UoZWL/1Ftsrk0M1/skuMVtrqVCQSwKBgF3R\nFlYnkwPnR0nvgBdzMTnu9bdy4EKYvoRKJWpvq+oIQ/MCs++bEh1xxamPkfWOtGLY\nJbcSRW8YXba1dqQHXdOgQ7HgZCZgzE48z4jm+Bb7BycC5Dbt4+jpFu7TsPJqKPjw\nL7Vx2VUe8lsDBvkCUGXBhRU93h7RocCJYlX//34BAoGBAIWprtdmMnKAgFOobGpw\nPPua4UO38zx9A6V7Gtml8nNfPKOlY6h4IVuW/GAXRZyD7pHi0PQxrboH7/VxISVq\nqh2fxjFwvX7AvPVmgGtm2r5E208s0kN0H5cZ74MkdSV+nIhYyW1bp3QuxWoJHt9E\ngNheDUpG6U5UY7rOlho30sSV\n-----END PRIVATE KEY-----\n",
+  "client_email": "tripmate@authentic-genre-435809-t3.iam.gserviceaccount.com",
+  "client_id": "109339026626334591920",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tripmate%40authentic-genre-435809-t3.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
