@@ -61,62 +61,130 @@ class _LocalBuddyRevenueScreenState extends State<LocalBuddyRevenueScreen> {
   }
 
   Future<void> _fetchRevenue() async {
-    setState(() {
-      isLoading = true; // Set loading to true when starting to fetch data
-    });
+  setState(() {
+    isLoading = true;
+  });
 
-    try {
-      // Query to find the specific revenue document where id matches localBuddyID
-      QuerySnapshot revenueSnapshot = await _firestore
+  try {
+    QuerySnapshot revenueSnapshot = await _firestore
+        .collection('revenue')
+        .where('id', isEqualTo: widget.localBuddyID)
+        .get();
+
+    if (revenueSnapshot.docs.isNotEmpty) {
+      DocumentSnapshot revenueDoc = revenueSnapshot.docs.first;
+      print('Revenue document found: ${revenueDoc.id}');
+
+      waitingWithdraw.clear();
+      doneWithdraw.clear();
+      totalWaitingWithdraw = 0.0;
+
+      // Initialize monthly revenue map with zero for all months
+      _initializeMonthlyData();
+
+      // Define current year range
+      DateTime now = DateTime.now();
+      DateTime startOfYear = DateTime(now.year, 1, 1);
+      DateTime startOfNextYear = DateTime(now.year + 1, 1, 1);
+
+      // Query profit for current year only
+      QuerySnapshot profitSnapshot = await _firestore
           .collection('revenue')
-          .where('id', isEqualTo: widget.localBuddyID) // Use where to match id field
+          .doc(revenueDoc.id)
+          .collection('profit')
+          .where('timestamp', isGreaterThanOrEqualTo: Timestamp.fromDate(startOfYear))
+          .where('timestamp', isLessThan: Timestamp.fromDate(startOfNextYear))
           .get();
 
-      // Debug: Check if revenue documents were found
-      if (revenueSnapshot.docs.isNotEmpty) {
-        DocumentSnapshot revenueDoc = revenueSnapshot.docs.first;
-        print('Revenue document found: ${revenueDoc.id}');
-        
-        waitingWithdraw.clear();
-        doneWithdraw.clear();
-        totalWaitingWithdraw = 0.0;
+      for (var profitDoc in profitSnapshot.docs) {
+        double profitAmount = profitDoc['profit'] ?? 0.0;
+        Timestamp profitDate = profitDoc['timestamp'];
+        int isWithdraw = profitDoc['isWithdraw'] ?? 0;
 
-        // Fetch all documents in the profit subcollection
-        QuerySnapshot profitSnapshot = await _firestore
-            .collection('revenue')
-            .doc(revenueDoc.id) // Use the found document ID here
-            .collection('profit') // Access the profit subcollection
-            .get();
+        String monthKey = DateFormat('MMM').format(profitDate.toDate());
 
-        for (var profitDoc in profitSnapshot.docs) {
-          double profitAmount = profitDoc['profit'] ?? 0.0; // Adjust based on your field
-          Timestamp profitDate = profitDoc['timestamp']; // Adjust based on your field
-          int isWithdraw = profitDoc['isWithdraw'] ?? 0; // 0 for waiting, 1 for done
-
-          if (isWithdraw == 0) {
-            waitingWithdraw.add(profitAmount);
-            totalWaitingWithdraw += profitAmount;
-            String monthKey = DateFormat('MMM').format(profitDate.toDate());
-            localBuddyRevenueByMonth[monthKey] = (localBuddyRevenueByMonth[monthKey] ?? 0) + profitAmount;
-          } else {
-            doneWithdraw.add(profitAmount);
-            String monthKey = DateFormat('MMM').format(profitDate.toDate());
-            localBuddyRevenueByMonth[monthKey] = (localBuddyRevenueByMonth[monthKey] ?? 0) + profitAmount;
-          }
-
-          print('Profit Document ID: ${profitDoc.id}, Amount: $profitAmount, Is Withdraw: $isWithdraw');
+        if (isWithdraw == 0) {
+          waitingWithdraw.add(profitAmount);
+          totalWaitingWithdraw += profitAmount;
+        } else {
+          doneWithdraw.add(profitAmount);
         }
-      } else {
-        print('No revenue document found for localBuddyID: ${widget.localBuddyID}');
+
+        // Accumulate profit by month
+        localBuddyRevenueByMonth[monthKey] = (localBuddyRevenueByMonth[monthKey] ?? 0) + profitAmount;
+
+        print('Profit Document ID: ${profitDoc.id}, Amount: $profitAmount, Is Withdraw: $isWithdraw');
       }
-    } catch (e) {
-      print('Error fetching revenue: $e');
-    } finally {
-      setState(() {
-        isLoading = false; 
-      });
+    } else {
+      print('No revenue document found for localBuddyID: ${widget.localBuddyID}');
     }
+  } catch (e) {
+    print('Error fetching revenue: $e');
+  } finally {
+    setState(() {
+      isLoading = false;
+    });
   }
+}
+
+
+  // Future<void> _fetchRevenue() async {
+  //   setState(() {
+  //     isLoading = true; // Set loading to true when starting to fetch data
+  //   });
+
+  //   try {
+  //     // Query to find the specific revenue document where id matches localBuddyID
+  //     QuerySnapshot revenueSnapshot = await _firestore
+  //         .collection('revenue')
+  //         .where('id', isEqualTo: widget.localBuddyID) // Use where to match id field
+  //         .get();
+
+  //     // Debug: Check if revenue documents were found
+  //     if (revenueSnapshot.docs.isNotEmpty) {
+  //       DocumentSnapshot revenueDoc = revenueSnapshot.docs.first;
+  //       print('Revenue document found: ${revenueDoc.id}');
+        
+  //       waitingWithdraw.clear();
+  //       doneWithdraw.clear();
+  //       totalWaitingWithdraw = 0.0;
+
+  //       // Fetch all documents in the profit subcollection
+  //       QuerySnapshot profitSnapshot = await _firestore
+  //           .collection('revenue')
+  //           .doc(revenueDoc.id) // Use the found document ID here
+  //           .collection('profit') // Access the profit subcollection
+  //           .get();
+
+  //       for (var profitDoc in profitSnapshot.docs) {
+  //         double profitAmount = profitDoc['profit'] ?? 0.0; // Adjust based on your field
+  //         Timestamp profitDate = profitDoc['timestamp']; // Adjust based on your field
+  //         int isWithdraw = profitDoc['isWithdraw'] ?? 0; // 0 for waiting, 1 for done
+
+  //         if (isWithdraw == 0) {
+  //           waitingWithdraw.add(profitAmount);
+  //           totalWaitingWithdraw += profitAmount;
+  //           String monthKey = DateFormat('MMM').format(profitDate.toDate());
+  //           localBuddyRevenueByMonth[monthKey] = (localBuddyRevenueByMonth[monthKey] ?? 0) + profitAmount;
+  //         } else {
+  //           doneWithdraw.add(profitAmount);
+  //           String monthKey = DateFormat('MMM').format(profitDate.toDate());
+  //           localBuddyRevenueByMonth[monthKey] = (localBuddyRevenueByMonth[monthKey] ?? 0) + profitAmount;
+  //         }
+
+  //         print('Profit Document ID: ${profitDoc.id}, Amount: $profitAmount, Is Withdraw: $isWithdraw');
+  //       }
+  //     } else {
+  //       print('No revenue document found for localBuddyID: ${widget.localBuddyID}');
+  //     }
+  //   } catch (e) {
+  //     print('Error fetching revenue: $e');
+  //   } finally {
+  //     setState(() {
+  //       isLoading = false; 
+  //     });
+  //   }
+  // }
 
   Future<void> _updateBankDetails() async{
     try{
@@ -650,7 +718,7 @@ class _LocalBuddyRevenueScreenState extends State<LocalBuddyRevenueScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Monthly Revenue Trend",
+                            "Monthly Revenue Trend ${DateTime.now().year}",
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
