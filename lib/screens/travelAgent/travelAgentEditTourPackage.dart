@@ -819,23 +819,36 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 236, 236, 236),
       resizeToAvoidBottomInset: true,
-      appBar: AppBar(
-        title: const Text("Edit Tour"),
-        centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-          fontFamily: 'Inika',
-          fontWeight: FontWeight.bold,
-          fontSize: 20,
-        ),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-          onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => TravelAgentViewTourListScreen(userId: widget.userId, countryName: widget.countryName, cityName: widget.cityName)));
-          },
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)], // Soft pink gradient
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+          child: AppBar(
+            title: const Text("Edit Tour"),
+            centerTitle: true,
+            backgroundColor: Colors.transparent, // Makes the gradient visible
+            elevation: 0,
+            titleTextStyle: const TextStyle(
+              color: Colors.black,
+              fontFamily: 'Inika',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
+              onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => TravelAgentViewTourListScreen(userId: widget.userId, countryName: widget.countryName, cityName: widget.cityName)));
+              },
+            ),
+          ),
         ),
       ),
       body: Stack(
@@ -878,7 +891,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
                         ),
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size(20, 35),
-                          backgroundColor: const Color(0xFF467BA1),
+                          backgroundColor: const Color(0xFFF50057),
                           textStyle: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -903,7 +916,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
                         ),
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size(20, 35),
-                          backgroundColor: const Color(0xFF467BA1),
+                          backgroundColor: const Color(0xFFF50057),
                           textStyle: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -931,7 +944,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
                         ),
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size(20, 35),
-                          backgroundColor: const Color(0xFF467BA1),
+                          backgroundColor: const Color(0xFFF50057),
                           textStyle: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -964,7 +977,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
                                 ),
                               ),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF467BA1),
+                          backgroundColor: const Color(0xFFF50057),
                           textStyle: const TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
@@ -1017,18 +1030,18 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
             fillColor: Colors.white,
             border: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             enabledBorder: OutlineInputBorder(
-              borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2.5),
+              borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
             ),
             floatingLabelBehavior: FloatingLabelBehavior.always,
           ),
@@ -1060,18 +1073,18 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
             fillColor: Colors.white,
             border: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             enabledBorder: OutlineInputBorder(
-              borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2.5),
+              borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
             ),
             floatingLabelBehavior: FloatingLabelBehavior.always,
           ),
@@ -1097,7 +1110,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: Border.all(color: const Color(0xFFF50057), width: 1.5),
             borderRadius: BorderRadius.circular(4),
           ),
           child: Table(
@@ -1106,7 +1119,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
               1: FlexColumnWidth(2.7),
               2: FlexColumnWidth(0.4),
             },
-            border: TableBorder.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: TableBorder.all(color: const Color(0xFFF50057), width: 1.5),
             children: [
               TableRow(
                 children: [
@@ -1171,7 +1184,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: Border.all(color: const Color(0xFFF50057), width: 1.5),
             borderRadius: BorderRadius.circular(4),
           ),
           child: Table(
@@ -1181,7 +1194,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
               2: FlexColumnWidth(1.7),
               3: FlexColumnWidth(0.4),
             },
-            border: TableBorder.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: TableBorder.all(color: const Color(0xFFF50057), width: 1.5),
             children: [
               TableRow(
                 children: [
@@ -1259,7 +1272,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: Border.all(color: const Color(0xFFF50057), width: 1.5),
             borderRadius: BorderRadius.circular(4),
           ),
           child: Table(
@@ -1270,7 +1283,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
               3: FlexColumnWidth(1.1),
               4: FlexColumnWidth(0.4),
             },
-            border: TableBorder.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: TableBorder.all(color: const Color(0xFFF50057), width: 1.5),
             children: [
               TableRow(
                 children: [
@@ -1358,7 +1371,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: Border.all(color: const Color(0xFFF50057), width: 1.5),
             borderRadius: BorderRadius.circular(4),
           ),
           child: Table(
@@ -1368,7 +1381,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
               2: FlexColumnWidth(0.6),
               3: FlexColumnWidth(1.1),
             },
-            border: TableBorder.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: TableBorder.all(color: const Color(0xFFF50057), width: 1.5),
             children: [
               TableRow(
                 children: [
@@ -1455,7 +1468,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
               icon: const Icon(
                 Icons.edit,
                 size: 25,
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
               ),
             ),
           ],
@@ -1467,7 +1480,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
-                border: Border.all(color: const Color(0xFF467BA1), width: 3),
+                border: Border.all(color: const Color(0xFFF50057), width: 3),
               ),
               child: Image.memory(
                 _image!,
@@ -1481,7 +1494,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  border: Border.all(color: const Color(0xFF467BA1), width: 3),
+                  border: Border.all(color: const Color(0xFFF50057), width: 3),
                 ),
                 child: Image.network(
                   existingImagePath!,
@@ -1539,7 +1552,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
               icon: const Icon(
                 Icons.edit,
                 size: 25,
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
               ),
             ),
           ],
@@ -1562,19 +1575,19 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
             fillColor: Colors.white,
             border: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             enabledBorder: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
@@ -1582,7 +1595,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
             suffixIcon: IconButton(
               icon: const Icon(
                 Icons.picture_as_pdf,
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 size: 30,
               ),
               onPressed: () {
@@ -1604,7 +1617,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
   Widget _buildTableHeaderCell(String label) {
     return Container(
       padding: const EdgeInsets.all(8.0),
-      color: const Color(0xFF467BA1).withOpacity(0.6),
+      color: const Color(0xFFF50057).withOpacity(0.6),
       child: Center(
         child: Text(
           label,
@@ -1624,7 +1637,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
       decoration: const BoxDecoration(
         color: Colors.white,
         border: Border(
-          right: BorderSide(color: Color(0xFF467BA1), width: 1.0),
+          right: BorderSide(color: Color(0xFFF50057), width: 1.0),
         ),
       ),
       alignment: alignment,
@@ -1653,7 +1666,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
     final containerDecoration = const BoxDecoration(
       color: Colors.white,
       border: Border(
-        left: BorderSide(color: Color(0xFF467BA1), width: 1.0),
+        left: BorderSide(color: Color(0xFFF50057), width: 1.0),
       ),
     );
 
@@ -1714,7 +1727,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
       decoration: const BoxDecoration(
         color: Colors.white,
         border: Border(
-          left: BorderSide(color: Color(0xFF467BA1), width: 1.0),
+          left: BorderSide(color: Color(0xFFF50057), width: 1.0),
         ),
       ),
       child: TextField(
@@ -1758,7 +1771,7 @@ class _TravelAgentEditTourPackageScreenState extends State<TravelAgentEditTourPa
       decoration: const BoxDecoration(
         color: Colors.white,
         border: Border(
-          left: BorderSide(color: Color(0xFF467BA1), width: 1.0),
+          left: BorderSide(color: Color(0xFFF50057), width: 1.0),
         ),
       ),
       child: TextField(

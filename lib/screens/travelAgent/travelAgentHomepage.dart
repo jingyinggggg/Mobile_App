@@ -234,46 +234,57 @@ class _TravelAgentHomepageScreenState extends State<TravelAgentHomepageScreen> {
     ];
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 236, 236, 236),
       resizeToAvoidBottomInset: true,
-      appBar: AppBar(
-        title: Text(_screenTitles[currentPageIndex]),
-        centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-          fontFamily: 'Inika',
-          fontWeight: FontWeight.bold,
-          fontSize: 20,
-        ),
-        automaticallyImplyLeading: false,
-        actions: [
-          Stack(
-            children: [
-              IconButton(
-                icon: const Icon(Icons.notifications, color: Colors.white),
-                onPressed: () {
-                  Navigator.push(
-                    context, 
-                    MaterialPageRoute(builder: (context) => NotificationScreen(userId: widget.userId, isTA: true))
-                  );
-                },
-              ),
-              if (hasNoti)
-                Positioned(
-                  right:14,
-                  top:12,
-                  child: Container(
-                    padding: const EdgeInsets.all(4),
-                    decoration: BoxDecoration(
-                      color: Colors.red,
-                      shape: BoxShape.circle,
-                    ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+          child: AppBar(
+            title: Text(_screenTitles[currentPageIndex]),
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            titleTextStyle: const TextStyle(
+              color: Colors.black,
+              fontFamily: 'Inika',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+            automaticallyImplyLeading: false,
+            actions: [
+              Stack(
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.notifications, color: Colors.black),
+                    onPressed: () {
+                      Navigator.push(
+                        context, 
+                        MaterialPageRoute(
+                          builder: (context) => NotificationScreen(userId: widget.userId, isTA: true)
+                        ),
+                      );
+                    },
                   ),
-                ),
+                  if (hasNoti)
+                    const Positioned(
+                      right: 14,
+                      top: 12,
+                      child: CircleAvatar(
+                        radius: 5,
+                        backgroundColor: Colors.red,
+                      ),
+                    ),
+                ],
+              ),
             ],
           ),
-        ],
+        ),
       ),
       bottomNavigationBar: AdminCustomBottomNavBar(
         currentIndex: currentPageIndex,
@@ -288,7 +299,7 @@ class _TravelAgentHomepageScreenState extends State<TravelAgentHomepageScreen> {
 
 
   Widget _buildMenuButton(BuildContext context, {required String icon, required String label, required VoidCallback onPressed, required bool isEnabled}) {
-    Color colors = isEnabled ? primaryColor : Colors.grey;
+    Color colors = isEnabled ? Color(0xFFF50057) : Colors.grey;
 
     return ElevatedButton(
       onPressed: onPressed,
@@ -296,10 +307,9 @@ class _TravelAgentHomepageScreenState extends State<TravelAgentHomepageScreen> {
         backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
-          side: BorderSide(color: colors, width: 2),
+          side: BorderSide(color: colors, width: 1),
         ),
         elevation: 10,
-        shadowColor: colors,
         minimumSize: Size(getScreenWidth(context) * 0.4, getScreenWidth(context) * 0.4)
       ),
       child: Column(
@@ -329,7 +339,7 @@ class _TravelAgentHomepageScreenState extends State<TravelAgentHomepageScreen> {
             style: TextStyle(
               fontSize: 16,
               color: colors,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w800,
             ),
           ),
         ],

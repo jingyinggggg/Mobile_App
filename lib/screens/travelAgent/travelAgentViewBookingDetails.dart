@@ -221,7 +221,7 @@ class _TravelAgentViewBookingDetailsScreenState extends State<TravelAgentViewBoo
       appBar: AppBar(
         title: const Text("Booking"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',

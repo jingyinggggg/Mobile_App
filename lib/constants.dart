@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 const String apiKey = "AIzaSyBFCbi7ht9miK8Mcqrusg25VWZzvLNa8qE";
 
-const Color primaryColor = Color(0xFF467BA1);
+const Color primaryColor = Color(0xFFF50057);
 const Color secondaryColor = Colors.black54;
-const Color appBarColor = Color(0xFF749CB9);
+const Color appBarColor = Color(0xFFE57373);
 const defaultFontSize = 14.0;
 const defaultLabelFontSize = 16.0;
 const defaultAppBarTitleFontSize = 20.0;

@@ -442,7 +442,7 @@ class _AdminManageLocalBuddyRegistrationRequestScreenState extends State<AdminMa
       appBar: AppBar(
         title: Text("Registration Request"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',

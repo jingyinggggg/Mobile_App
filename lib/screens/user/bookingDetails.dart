@@ -274,7 +274,7 @@ class _BookingDetailsScreenState extends State<BookingDetailsScreen> {
       appBar: AppBar(
         title: const Text("Booking"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -860,7 +860,7 @@ class _BookingDetailsScreenState extends State<BookingDetailsScreen> {
                                     padding: const EdgeInsets.all(10),
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
-                                      border: Border.all(color: const Color(0xFF467BA1), width: 1.5),
+                                      border: Border.all(color: const Color(0xFFF50057), width: 1.5),
                                     ),
                                     child: Image.network(
                                       carBookingData!['rejectProof'],

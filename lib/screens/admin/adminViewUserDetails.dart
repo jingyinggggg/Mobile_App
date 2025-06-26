@@ -356,7 +356,7 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
       appBar: AppBar(
         title: const Text("User"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -520,7 +520,7 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
                             ),
                           ),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF467BA1),
+                          backgroundColor: const Color(0xFFF50057),
                           padding: const EdgeInsets.symmetric(vertical: 15), // You can remove horizontal padding to avoid shrinking
                           textStyle: const TextStyle(
                             fontSize: 18,
@@ -559,21 +559,21 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -608,21 +608,21 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -657,21 +657,21 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -726,21 +726,21 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
@@ -759,7 +759,7 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
           suffixIcon: IconButton(
             icon: const Icon(
               Icons.calendar_today_outlined,
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               size: 20,
             ),
             onPressed: () => _selectDate(context),

@@ -341,27 +341,27 @@ class _ChatDetailsScreenState extends State<ChatDetailsScreen> {
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
           suffixIcon: IconButton(
             onPressed: sendMessage, 
-            icon: ImageIcon(AssetImage('images/send.png'), size: 25, color: Color(0xFF467BA1),)
+            icon: ImageIcon(AssetImage('images/send.png'), size: 25, color: Color(0xFFF50057),)
           ),
         ),
       ),

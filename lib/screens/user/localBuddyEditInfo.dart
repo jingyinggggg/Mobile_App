@@ -265,7 +265,7 @@ class _LocalBuddyEditInfoScreenState extends State<LocalBuddyEditInfoScreen> {
       appBar: rejectReason != null && registrationStatus == 3 ? AppBar(
         title: const Text("Local Buddy"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -420,21 +420,21 @@ class _LocalBuddyEditInfoScreenState extends State<LocalBuddyEditInfoScreen> {
           //     border: OutlineInputBorder(
           //       borderRadius: BorderRadius.circular(10),
           //       borderSide: const BorderSide(
-          //         color: Color(0xFF467BA1),
+          //         color: Color(0xFFF50057),
           //         width: 2.5,
           //       ),
           //     ),
           //     focusedBorder: OutlineInputBorder(
           //       borderRadius: BorderRadius.circular(10),
           //       borderSide: const BorderSide(
-          //         color: Color(0xFF467BA1),
+          //         color: Color(0xFFF50057),
           //         width: 2.5,
           //       ),
           //     ),
           //     enabledBorder: OutlineInputBorder(
           //       borderRadius: BorderRadius.circular(10),
           //       borderSide: const BorderSide(
-          //         color: Color(0xFF467BA1),
+          //         color: Color(0xFFF50057),
           //         width: 2.5,
           //       ),
           //     ),
@@ -453,7 +453,7 @@ class _LocalBuddyEditInfoScreenState extends State<LocalBuddyEditInfoScreen> {
           //     suffixIcon: IconButton(
           //       icon: const Icon(
           //         Icons.image,
-          //         color: Color(0xFF467BA1),
+          //         color: Color(0xFFF50057),
           //         size: 25,
           //       ),
           //       onPressed: () {
@@ -477,7 +477,7 @@ class _LocalBuddyEditInfoScreenState extends State<LocalBuddyEditInfoScreen> {
                       ),
                     ),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF467BA1),
+                backgroundColor: const Color(0xFFF50057),
                 textStyle: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -512,21 +512,21 @@ class _LocalBuddyEditInfoScreenState extends State<LocalBuddyEditInfoScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),

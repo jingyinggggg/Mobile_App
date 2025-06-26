@@ -392,7 +392,7 @@ class _AdminViewAnalyticsChartScreenState extends State<AdminViewAnalyticsChartS
         appBar: AppBar(
           title: const Text("Analytics"),
           centerTitle: true,
-          backgroundColor: const Color(0xFF749CB9),
+          backgroundColor: const Color(0xFFE57373),
           titleTextStyle: const TextStyle(
             color: Colors.white,
             fontFamily: 'Inika',
@@ -490,7 +490,7 @@ class _AdminViewAnalyticsChartScreenState extends State<AdminViewAnalyticsChartS
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                           ),
                           hintText: "Search tour name...",
                           hintStyle: TextStyle(
@@ -547,7 +547,7 @@ class _AdminViewAnalyticsChartScreenState extends State<AdminViewAnalyticsChartS
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                           ),
                           hintText: "Search car name...",
                           hintStyle: TextStyle(

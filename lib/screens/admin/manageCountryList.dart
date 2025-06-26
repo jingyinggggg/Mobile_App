@@ -132,7 +132,7 @@ class _AdminManageCountryListScreenState extends State<AdminManageCountryListScr
       appBar: AppBar(
         title: const Text("Country List"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -174,7 +174,7 @@ class _AdminManageCountryListScreenState extends State<AdminManageCountryListScr
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                        borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -203,10 +203,10 @@ class _AdminManageCountryListScreenState extends State<AdminManageCountryListScr
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFF467BA1),
+                        backgroundColor: Color(0xFFF50057),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
-                          side: BorderSide(color: Color(0xFF467BA1), width: 2),
+                          side: BorderSide(color: Color(0xFFF50057), width: 2),
                         ),
                       ),
                       child: Text(

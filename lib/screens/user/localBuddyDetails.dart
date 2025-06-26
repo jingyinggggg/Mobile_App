@@ -299,7 +299,7 @@ class _LocalBuddyDetailsScreenState extends State<LocalBuddyDetailsScreen> {
       appBar: AppBar(
         title: Text("Local Buddy"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -474,7 +474,7 @@ class _LocalBuddyDetailsScreenState extends State<LocalBuddyDetailsScreen> {
                                   ],
                                 ),
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xFF467BA1),
+                                  backgroundColor: const Color(0xFFF50057),
                                   padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(0),
@@ -523,7 +523,7 @@ class _LocalBuddyDetailsScreenState extends State<LocalBuddyDetailsScreen> {
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       border: Border.all(
-                                        color: Color(0xFF467BA1),
+                                        color: Color(0xFFF50057),
                                         width: 2.0,
                                       ),
                                     ),

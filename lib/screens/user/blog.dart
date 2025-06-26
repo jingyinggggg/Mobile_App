@@ -38,7 +38,7 @@ class _BlogMainScreenState extends State<BlogMainScreen> {
       appBar: AppBar(
         title: const Text("Blog"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -55,7 +55,7 @@ class _BlogMainScreenState extends State<BlogMainScreen> {
       body: _screens[_currentIndex], // Display the corresponding screen
       bottomNavigationBar: ConvexAppBar(
         height: 60,
-        backgroundColor: Color(0xFF749CB9),
+        backgroundColor: Color(0xFFE57373),
         color: Colors.white,
         style: TabStyle.fixedCircle,
         items: [

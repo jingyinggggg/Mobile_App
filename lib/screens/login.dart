@@ -22,8 +22,8 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
 
   // Add email and password controllers
-  final TextEditingController emailController = TextEditingController();
-  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController emailController = TextEditingController(text: "angieng@forevertravel.com");
+  final TextEditingController passwordController = TextEditingController(text: "12345678@");
 
   @override
   void dispose() {
@@ -241,9 +241,11 @@ class _LoginScreenState extends State<LoginScreen> {
       decoration: InputDecoration(
         hintText: 'Enter your email',
         labelText: 'Email',
+
+
         prefixIcon: const Icon(
           Icons.email,
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
           size: 20,
         ),
         filled: true,
@@ -251,21 +253,21 @@ class _LoginScreenState extends State<LoginScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -301,7 +303,7 @@ class _LoginScreenState extends State<LoginScreen> {
         labelText: "Password",
         prefixIcon: const Icon(
           Icons.lock,
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
           size: 20,
         ),
         suffixIcon: IconButton(
@@ -320,21 +322,21 @@ class _LoginScreenState extends State<LoginScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -363,8 +365,8 @@ class _LoginScreenState extends State<LoginScreen> {
   //         rememberMe = value!;
   //       });
   //     },
-  //     activeColor: Color(0xFF467BA1), // Color when the checkbox is checked
-  //     side: BorderSide(color: Color(0xFF467BA1), width: 2.0), // Border color and width
+  //     activeColor: Color(0xFFF50057), // Color when the checkbox is checked
+  //     side: BorderSide(color: Color(0xFFF50057), width: 2.0), // Border color and width
   //   );
   // }
 
@@ -484,7 +486,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFF467BA1),
+                              backgroundColor: const Color(0xFFF50057),
                               padding: EdgeInsets.symmetric(vertical: screenHeight * 0.02), // Responsive vertical padding
                               textStyle: TextStyle(
                                 fontSize: screenWidth * 0.05, // Responsive font size

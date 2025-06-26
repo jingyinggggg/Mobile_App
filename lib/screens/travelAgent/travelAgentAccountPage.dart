@@ -82,7 +82,7 @@ class _TravelAgentAccountScreenState extends State<TravelAgentAccountScreen> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: Color(0xFF467BA1),  // Border color
+                            color: Color(0xFFF50057),  // Border color
                             width: 3.0,  // Border width
                           ),
                         ),

@@ -23,7 +23,7 @@ class _AdminProfileScreenState extends State<AdminProfileScreen> {
       appBar: AppBar(
         title: const Text("Profile"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -94,7 +94,7 @@ class _AdminProfileScreenState extends State<AdminProfileScreen> {
                         decoration: BoxDecoration(
                           color: Colors.white, // Set background color
                           shape: BoxShape.circle,
-                          border: Border.all(color: Color(0xFF467BA1), width: 4)
+                          border: Border.all(color: Color(0xFFF50057), width: 4)
                         ),
                         child: ClipOval(
                           child: Padding(
@@ -147,7 +147,7 @@ class _AdminProfileScreenState extends State<AdminProfileScreen> {
                 right: screenWidth * 0.05,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: const Color(0xFF467BA1),
+                    color: const Color(0xFFF50057),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Column(
@@ -155,7 +155,7 @@ class _AdminProfileScreenState extends State<AdminProfileScreen> {
                       Container(
                         padding: EdgeInsets.all(screenWidth * 0.03),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF467BA1),
+                          color: const Color(0xFFF50057),
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(15),
                             topRight: Radius.circular(15),
@@ -190,7 +190,7 @@ class _AdminProfileScreenState extends State<AdminProfileScreen> {
                               child: Container(
                                 padding: EdgeInsets.only(right: 5),
                                 decoration: BoxDecoration(
-                                  border: Border(right: BorderSide(color: Color(0xFF467BA1), width: 2))
+                                  border: Border(right: BorderSide(color: Color(0xFFF50057), width: 2))
                                 ),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -234,7 +234,7 @@ class _AdminProfileScreenState extends State<AdminProfileScreen> {
                         height: screenHeight * 0.04,
                         padding: EdgeInsets.all(screenWidth * 0.03),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF467BA1),
+                          color: const Color(0xFFF50057),
                           borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(15),
                             bottomRight: Radius.circular(15),
@@ -265,7 +265,7 @@ class _AdminProfileScreenState extends State<AdminProfileScreen> {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF467BA1),
+                      backgroundColor: const Color(0xFFF50057),
                       padding: EdgeInsets.symmetric(
                         horizontal: screenWidth * 0.15,
                         vertical: screenHeight * 0.02,

@@ -381,7 +381,7 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
                                 _saveUserData();
                               },
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF467BA1),
+                                backgroundColor: const Color(0xFFF50057),
                                 textStyle: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
@@ -409,7 +409,7 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
                                 );
                               },
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF467BA1),
+                                backgroundColor: const Color(0xFFF50057),
                                 textStyle: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
@@ -456,21 +456,21 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -507,21 +507,21 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -566,21 +566,21 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
@@ -600,7 +600,7 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
           suffixIcon: IconButton(
             icon: const Icon(
               Icons.calendar_today_outlined,
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               size: 20,
             ),
             onPressed: () => _selectDate(context),
@@ -621,21 +621,21 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -694,21 +694,21 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -745,21 +745,21 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -796,21 +796,21 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -850,21 +850,21 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -914,21 +914,21 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -979,21 +979,21 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -1013,7 +1013,7 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
         suffixIcon: IconButton(
           icon: const Icon(
             Icons.image,
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             size: 25,
           ),
           onPressed: () {

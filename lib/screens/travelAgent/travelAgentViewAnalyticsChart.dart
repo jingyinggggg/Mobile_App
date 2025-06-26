@@ -391,7 +391,7 @@ class _TravelAgentViewAnalyticsChartScreenState extends State<TravelAgentViewAna
         appBar: AppBar(
           title: const Text("Analytics"),
           centerTitle: true,
-          backgroundColor: const Color(0xFF749CB9),
+          backgroundColor: const Color(0xFFE57373),
           titleTextStyle: const TextStyle(
             color: Colors.white,
             fontFamily: 'Inika',
@@ -489,7 +489,7 @@ class _TravelAgentViewAnalyticsChartScreenState extends State<TravelAgentViewAna
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                           ),
                           hintText: "Search tour name...",
                           hintStyle: TextStyle(
@@ -546,7 +546,7 @@ class _TravelAgentViewAnalyticsChartScreenState extends State<TravelAgentViewAna
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                           ),
                           hintText: "Search car name...",
                           hintStyle: TextStyle(

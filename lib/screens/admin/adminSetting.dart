@@ -23,7 +23,7 @@ class _AdminSettingScreenState extends State<AdminSettingScreen> {
       appBar: AppBar(
         title: const Text("Setting"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -94,7 +94,7 @@ class _AdminSettingScreenState extends State<AdminSettingScreen> {
                         decoration: BoxDecoration(
                           color: Colors.white, // Set background color
                           shape: BoxShape.circle,
-                          border: Border.all(color: Color(0xFF467BA1), width: 4)
+                          border: Border.all(color: Color(0xFFF50057), width: 4)
                         ),
                         child: ClipOval(
                           child: Padding(
@@ -176,7 +176,7 @@ class _AdminSettingScreenState extends State<AdminSettingScreen> {
           backgroundColor: Colors.white,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
-            side: const BorderSide(color: Color(0xFF467BA1), width: 3),
+            side: const BorderSide(color: Color(0xFFF50057), width: 3),
           ),
           minimumSize: const Size.fromHeight(55),
         ),

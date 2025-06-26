@@ -112,7 +112,7 @@ class _ViewTourListScreenState extends State<ViewTourListScreen> {
       appBar: AppBar(
         title: const Text("Group Tour"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -167,7 +167,7 @@ class _ViewTourListScreenState extends State<ViewTourListScreen> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2),
+                        borderSide: const BorderSide(color: Color(0xFFF50057), width: 2),
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -270,7 +270,7 @@ class _ViewTourListScreenState extends State<ViewTourListScreen> {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          border: Border.all(width: 1.5, color: const Color(0xFF467BA1)),
+          border: Border.all(width: 1.5, color: const Color(0xFFF50057)),
         ),
         margin: EdgeInsets.only(bottom: 30),
         child: IntrinsicHeight(
@@ -289,7 +289,7 @@ class _ViewTourListScreenState extends State<ViewTourListScreen> {
                     bottomLeft: Radius.circular(10),
                   ),
                   border: const Border(
-                    right: BorderSide(color: Color(0xFF467BA1), width: 1.5),
+                    right: BorderSide(color: Color(0xFFF50057), width: 1.5),
                   ),
                 ),
               ),
@@ -372,7 +372,7 @@ class _ViewTourListScreenState extends State<ViewTourListScreen> {
                           Text(
                             "Price from ",
                             style: const TextStyle(
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                               fontSize: 13,
                               fontWeight: FontWeight.w700,
                               fontStyle: FontStyle.italic
@@ -383,7 +383,7 @@ class _ViewTourListScreenState extends State<ViewTourListScreen> {
                                 ? "N/A"
                                 : "RM${cheapestPrice.toStringAsFixed(0)}/pax",
                             style: const TextStyle(
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                               fontSize: 14,
                               fontWeight: FontWeight.w900,
                               fontStyle: FontStyle.italic

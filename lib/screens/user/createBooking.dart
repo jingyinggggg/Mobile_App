@@ -1061,18 +1061,18 @@ class _createBookingScreenState extends State<createBookingScreen> {
                           fillColor: Colors.white,
                           border: OutlineInputBorder(
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                               width: 2.5,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                               width: 2.5,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2.5),
+                            borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
                           ),
                           floatingLabelBehavior: FloatingLabelBehavior.always,
                         ),
@@ -1094,18 +1094,18 @@ class _createBookingScreenState extends State<createBookingScreen> {
                           fillColor: Colors.white,
                           border: OutlineInputBorder(
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                               width: 2.5,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                               width: 2.5,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2.5),
+                            borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
                           ),
                           floatingLabelBehavior: FloatingLabelBehavior.always,
                         ),
@@ -1127,18 +1127,18 @@ class _createBookingScreenState extends State<createBookingScreen> {
                           fillColor: Colors.white,
                           border: OutlineInputBorder(
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                               width: 2.5,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                               width: 2.5,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2.5),
+                            borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
                           ),
                           floatingLabelBehavior: FloatingLabelBehavior.always,
                         ),
@@ -1483,7 +1483,7 @@ class _createBookingScreenState extends State<createBookingScreen> {
       appBar: AppBar(
         title: const Text("Booking"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -1560,21 +1560,21 @@ class _createBookingScreenState extends State<createBookingScreen> {
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
                                 borderSide: const BorderSide(
-                                  color: Color(0xFF467BA1),
+                                  color: Color(0xFFF50057),
                                   width: 2.5,
                                 ),
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
                                 borderSide: const BorderSide(
-                                  color: Color(0xFF467BA1),
+                                  color: Color(0xFFF50057),
                                   width: 2.5,
                                 ),
                               ),
                               enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
                                 borderSide: const BorderSide(
-                                  color: Color(0xFF467BA1),
+                                  color: Color(0xFFF50057),
                                   width: 2.5,
                                 ),
                               ),
@@ -2765,7 +2765,7 @@ class _createBookingScreenState extends State<createBookingScreen> {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        border: Border.all(width: 1.5, color: const Color(0xFF467BA1)),
+        border: Border.all(width: 1.5, color: const Color(0xFFF50057)),
       ),
       child: IntrinsicHeight(
         child: Row(
@@ -2783,7 +2783,7 @@ class _createBookingScreenState extends State<createBookingScreen> {
                   bottomLeft: Radius.circular(10),
                 ),
                 border: const Border(
-                  right: BorderSide(color: Color(0xFF467BA1), width: 1.5),
+                  right: BorderSide(color: Color(0xFFF50057), width: 1.5),
                 ),
               ),
             ),
@@ -2885,21 +2885,21 @@ class _createBookingScreenState extends State<createBookingScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -3292,21 +3292,21 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10),
         borderSide: const BorderSide(
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
           width: 2.5,
         ),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10),
         borderSide: const BorderSide(
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
           width: 2.5,
         ),
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10),
         borderSide: const BorderSide(
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
           width: 2.5,
         ),
       ),
@@ -3319,7 +3319,7 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
       suffixIcon: IconButton(
         icon: const Icon(
           Icons.calendar_today_outlined,
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
           size: 20,
         ),
         onPressed: () {
@@ -3408,21 +3408,21 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
   //         border: OutlineInputBorder(
   //           borderRadius: BorderRadius.circular(10),
   //           borderSide: const BorderSide(
-  //             color: Color(0xFF467BA1),
+  //             color: Color(0xFFF50057),
   //             width: 2.5,
   //           ),
   //         ),
   //         focusedBorder: OutlineInputBorder(
   //           borderRadius: BorderRadius.circular(10),
   //           borderSide: const BorderSide(
-  //             color: Color(0xFF467BA1),
+  //             color: Color(0xFFF50057),
   //             width: 2.5,
   //           ),
   //         ),
   //         enabledBorder: OutlineInputBorder(
   //           borderRadius: BorderRadius.circular(10),
   //           borderSide: const BorderSide(
-  //             color: Color(0xFF467BA1),
+  //             color: Color(0xFFF50057),
   //             width: 2.5,
   //           ),
   //         ),
@@ -3435,7 +3435,7 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
   //         suffixIcon: IconButton(
   //           icon: const Icon(
   //             Icons.calendar_today_outlined,
-  //             color: Color(0xFF467BA1),
+  //             color: Color(0xFFF50057),
   //             size: 20,
   //           ),
   //           onPressed: () {
@@ -3830,21 +3830,21 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
@@ -3863,7 +3863,7 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
           suffixIcon: IconButton(
             icon: const Icon(
               Icons.calendar_today_outlined,
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               size: 20,
             ),
             onPressed: () async {
@@ -3967,21 +3967,21 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
   //           border: OutlineInputBorder(
   //             borderRadius: BorderRadius.circular(10),
   //             borderSide: const BorderSide(
-  //               color: Color(0xFF467BA1),
+  //               color: Color(0xFFF50057),
   //               width: 2.5,
   //             ),
   //           ),
   //           focusedBorder: OutlineInputBorder(
   //             borderRadius: BorderRadius.circular(10),
   //             borderSide: const BorderSide(
-  //               color: Color(0xFF467BA1),
+  //               color: Color(0xFFF50057),
   //               width: 2.5,
   //             ),
   //           ),
   //           enabledBorder: OutlineInputBorder(
   //             borderRadius: BorderRadius.circular(10),
   //             borderSide: const BorderSide(
-  //               color: Color(0xFF467BA1),
+  //               color: Color(0xFFF50057),
   //               width: 2.5,
   //             ),
   //           ),
@@ -4000,7 +4000,7 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
   //           suffixIcon: IconButton(
   //             icon: const Icon(
   //               Icons.calendar_today_outlined,
-  //               color: Color(0xFF467BA1),
+  //               color: Color(0xFFF50057),
   //               size: 20,
   //             ),
   //             onPressed: () async {

@@ -221,7 +221,7 @@ class _AdminViewBookingListMainpageScreenState extends State<AdminViewBookingLis
         appBar: AppBar(
           title: const Text("Booking"),
           centerTitle: true,
-          backgroundColor: const Color(0xFF749CB9),
+          backgroundColor: const Color(0xFFE57373),
           titleTextStyle: const TextStyle(
             color: Colors.white,
             fontFamily: 'Inika',
@@ -294,7 +294,7 @@ class _AdminViewBookingListMainpageScreenState extends State<AdminViewBookingLis
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                              borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
@@ -381,7 +381,7 @@ class _AdminViewBookingListMainpageScreenState extends State<AdminViewBookingLis
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                              borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),

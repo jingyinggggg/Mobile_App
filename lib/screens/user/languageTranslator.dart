@@ -126,7 +126,7 @@ class _LanguageTranslatorScreenState extends State<LanguageTranslatorScreen> {
       appBar: AppBar(
         title: const Text("Language Translator"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -163,7 +163,7 @@ class _LanguageTranslatorScreenState extends State<LanguageTranslatorScreen> {
                           isExpanded: true,
                           underline: Container(
                             height: 2,  // Height of the underline
-                            color: Color(0xFF467BA1),  // Color of the underline
+                            color: Color(0xFFF50057),  // Color of the underline
                           ),
                           onChanged: (newValue) {
                             setState(() {
@@ -191,7 +191,7 @@ class _LanguageTranslatorScreenState extends State<LanguageTranslatorScreen> {
                           isExpanded: true,
                           underline: Container(
                             height: 2,  // Height of the underline
-                            color: Color(0xFF467BA1),  // Color of the underline
+                            color: Color(0xFFF50057),  // Color of the underline
                           ),
                           onChanged: (newValue) {
                             setState(() {
@@ -219,7 +219,7 @@ class _LanguageTranslatorScreenState extends State<LanguageTranslatorScreen> {
                   maxLines: 5,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xFF467BA1), width: 1.5),
+                      borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                     ),
                     hintText: _speechToText.isListening
                               ? "Listening ..."
@@ -239,7 +239,7 @@ class _LanguageTranslatorScreenState extends State<LanguageTranslatorScreen> {
                 Container(
                   child: Icon(
                     Icons.arrow_downward_rounded,
-                    color: Color(0xFF467BA1),
+                    color: Color(0xFFF50057),
                   ),
                 ),
 
@@ -251,7 +251,7 @@ class _LanguageTranslatorScreenState extends State<LanguageTranslatorScreen> {
                   maxLines: 5,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xFF467BA1), width: 1.5),
+                      borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                     ),
                     hintText: isTranslating ? "Translating..." : "Result here...", // Show translating hint
                   ),
@@ -267,7 +267,7 @@ class _LanguageTranslatorScreenState extends State<LanguageTranslatorScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Color(0xFF467BA1),
+        backgroundColor: Color(0xFFF50057),
         onPressed: _speechToText.isListening ? _stopListening : _startListening,
         tooltip: 'Listen',
         child: Icon(

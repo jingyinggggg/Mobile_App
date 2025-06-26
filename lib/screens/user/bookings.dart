@@ -1505,9 +1505,9 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                   _innerTabIndex = 0;  // Reset inner tab index on outer tab change
                 });
               },
-              labelColor: Color(0xFF467BA1),
+              labelColor: Color(0xFFF50057),
               unselectedLabelColor: Colors.grey,
-              indicatorColor: Color(0xFF467BA1),
+              indicatorColor: Color(0xFFF50057),
               indicatorSize: TabBarIndicatorSize.tab,
               labelStyle: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               unselectedLabelStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
@@ -1561,8 +1561,8 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
         });
       },
       style: ElevatedButton.styleFrom(
-        backgroundColor: _innerTabIndex == index ? Color(0xFF749CB9) : Colors.white,  // Active color
-        foregroundColor: _innerTabIndex == index ? Colors.white : Color(0xFF749CB9),  // Text color
+        backgroundColor: _innerTabIndex == index ? Color(0xFFE57373) : Colors.white,  // Active color
+        foregroundColor: _innerTabIndex == index ? Colors.white : Color(0xFFE57373),  // Text color
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
           side: BorderSide(color: primaryColor)
@@ -1885,9 +1885,9 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                                 style: TextButton.styleFrom(
                                   padding: EdgeInsets.symmetric(horizontal: 8.0),
                                   backgroundColor: Colors.white,
-                                  foregroundColor: Color(0xFF749CB9),
+                                  foregroundColor: Color(0xFFE57373),
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(color: Color(0xFF749CB9), width: 1.0),
+                                    side: BorderSide(color: Color(0xFFE57373), width: 1.0),
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                 ),
@@ -2058,9 +2058,9 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                                 style: TextButton.styleFrom(
                                   padding: EdgeInsets.symmetric(horizontal: 8.0),
                                   backgroundColor: Colors.white,
-                                  foregroundColor: Color(0xFF749CB9),
+                                  foregroundColor: Color(0xFFE57373),
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(color: Color(0xFF749CB9), width: 1.0),
+                                    side: BorderSide(color: Color(0xFFE57373), width: 1.0),
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                 ),
@@ -2166,9 +2166,9 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                               style: TextButton.styleFrom(
                                 padding: EdgeInsets.symmetric(horizontal: 8.0),
                                 backgroundColor: Colors.white,
-                                foregroundColor: Color(0xFF749CB9),
+                                foregroundColor: Color(0xFFE57373),
                                 shape: RoundedRectangleBorder(
-                                  side: BorderSide(color: Color(0xFF749CB9), width: 1.0),
+                                  side: BorderSide(color: Color(0xFFE57373), width: 1.0),
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                               ),
@@ -2535,9 +2535,9 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                             style: TextButton.styleFrom(
                               padding: EdgeInsets.symmetric(horizontal: 8.0),
                               backgroundColor: Colors.white,
-                              foregroundColor: Color(0xFF749CB9),
+                              foregroundColor: Color(0xFFE57373),
                               shape: RoundedRectangleBorder(
-                                side: BorderSide(color: Color(0xFF749CB9), width: 1.0),
+                                side: BorderSide(color: Color(0xFFE57373), width: 1.0),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),
@@ -2647,9 +2647,9 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                             style: TextButton.styleFrom(
                               padding: EdgeInsets.symmetric(horizontal: 8.0),
                               backgroundColor: Colors.white,
-                              foregroundColor: Color(0xFF749CB9),
+                              foregroundColor: Color(0xFFE57373),
                               shape: RoundedRectangleBorder(
-                                side: BorderSide(color: Color(0xFF749CB9), width: 1.0),
+                                side: BorderSide(color: Color(0xFFE57373), width: 1.0),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),
@@ -2886,18 +2886,18 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                                                               fillColor: Colors.white,
                                                               border: OutlineInputBorder(
                                                                 borderSide: const BorderSide(
-                                                                  color: Color(0xFF467BA1),
+                                                                  color: Color(0xFFF50057),
                                                                   width: 2.5,
                                                                 ),
                                                               ),
                                                               focusedBorder: OutlineInputBorder(
                                                                 borderSide: const BorderSide(
-                                                                  color: Color(0xFF467BA1),
+                                                                  color: Color(0xFFF50057),
                                                                   width: 2.5,
                                                                 ),
                                                               ),
                                                               enabledBorder: OutlineInputBorder(
-                                                                borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2.5),
+                                                                borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
                                                               ),
                                                               floatingLabelBehavior: FloatingLabelBehavior.always,
                                                             ),
@@ -2919,18 +2919,18 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                                                                 fillColor: Colors.white,
                                                                 border: OutlineInputBorder(
                                                                   borderSide: const BorderSide(
-                                                                    color: Color(0xFF467BA1),
+                                                                    color: Color(0xFFF50057),
                                                                     width: 2.5,
                                                                   ),
                                                                 ),
                                                                 focusedBorder: OutlineInputBorder(
                                                                   borderSide: const BorderSide(
-                                                                    color: Color(0xFF467BA1),
+                                                                    color: Color(0xFFF50057),
                                                                     width: 2.5,
                                                                   ),
                                                                 ),
                                                                 enabledBorder: OutlineInputBorder(
-                                                                  borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2.5),
+                                                                  borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
                                                                 ),
                                                                 floatingLabelBehavior: FloatingLabelBehavior.always,
                                                               ),
@@ -2952,18 +2952,18 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                                                                 fillColor: Colors.white,
                                                                 border: OutlineInputBorder(
                                                                   borderSide: const BorderSide(
-                                                                    color: Color(0xFF467BA1),
+                                                                    color: Color(0xFFF50057),
                                                                     width: 2.5,
                                                                   ),
                                                                 ),
                                                                 focusedBorder: OutlineInputBorder(
                                                                   borderSide: const BorderSide(
-                                                                    color: Color(0xFF467BA1),
+                                                                    color: Color(0xFFF50057),
                                                                     width: 2.5,
                                                                   ),
                                                                 ),
                                                                 enabledBorder: OutlineInputBorder(
-                                                                  borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2.5),
+                                                                  borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
                                                                 ),
                                                                 floatingLabelBehavior: FloatingLabelBehavior.always,
                                                               ),
@@ -2985,18 +2985,18 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                                                                 fillColor: Colors.white,
                                                                 border: OutlineInputBorder(
                                                                   borderSide: const BorderSide(
-                                                                    color: Color(0xFF467BA1),
+                                                                    color: Color(0xFFF50057),
                                                                     width: 2.5,
                                                                   ),
                                                                 ),
                                                                 focusedBorder: OutlineInputBorder(
                                                                   borderSide: const BorderSide(
-                                                                    color: Color(0xFF467BA1),
+                                                                    color: Color(0xFFF50057),
                                                                     width: 2.5,
                                                                   ),
                                                                 ),
                                                                 enabledBorder: OutlineInputBorder(
-                                                                  borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2.5),
+                                                                  borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
                                                                 ),
                                                                 floatingLabelBehavior: FloatingLabelBehavior.always,
                                                               ),
@@ -3117,9 +3117,9 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                             style: TextButton.styleFrom(
                               padding: EdgeInsets.symmetric(horizontal: 8.0),
                               backgroundColor: Colors.white,
-                              foregroundColor: Color(0xFF749CB9),
+                              foregroundColor: Color(0xFFE57373),
                               shape: RoundedRectangleBorder(
-                                side: BorderSide(color: Color(0xFF749CB9), width: 1.0),
+                                side: BorderSide(color: Color(0xFFE57373), width: 1.0),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),
@@ -3223,9 +3223,9 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                             style: TextButton.styleFrom(
                               padding: EdgeInsets.symmetric(horizontal: 8.0),
                               backgroundColor: Colors.white,
-                              foregroundColor: Color(0xFF749CB9),
+                              foregroundColor: Color(0xFFE57373),
                               shape: RoundedRectangleBorder(
-                                side: BorderSide(color: Color(0xFF749CB9), width: 1.0),
+                                side: BorderSide(color: Color(0xFFE57373), width: 1.0),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),

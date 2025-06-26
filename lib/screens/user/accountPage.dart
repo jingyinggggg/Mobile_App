@@ -115,7 +115,7 @@ class _AccountScreenState extends State<AccountScreen> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: Color(0xFF467BA1),  
+                            color: Color(0xFFF50057),  
                             width: 3.0,  
                           ),
                         ),

@@ -81,7 +81,7 @@ class _AdminAccountScreenState extends State<AdminAccountScreen> {
                         decoration: BoxDecoration(
                           color: Colors.white, // Set background color
                           shape: BoxShape.circle,
-                          border: Border.all(color: Color(0xFF467BA1), width: 4)
+                          border: Border.all(color: Color(0xFFF50057), width: 4)
                         ),
                         child: ClipOval(
                           child: Padding(

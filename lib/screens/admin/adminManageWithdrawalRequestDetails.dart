@@ -261,7 +261,7 @@ class _AdminRevenueDetailsScreenState extends State<AdminRevenueDetailsScreen> {
       appBar: AppBar(
         title: const Text("Withdrawal Request"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',

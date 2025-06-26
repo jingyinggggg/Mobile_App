@@ -63,10 +63,10 @@ class _CustomAnimationState extends State<CustomAnimation> with TickerProviderSt
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: Color(0xFF467BA1),
+      backgroundColor: Color(0xFFF50057),
       body: Center(
         child:Container(
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
           height: 235,
           width: 200,
           child: Stack(
@@ -103,9 +103,9 @@ class _CustomAnimationState extends State<CustomAnimation> with TickerProviderSt
       child: SingleChildScrollView(
         child: Column(
           children: [
-            MenuContent(index: 1, title:  'Translator', icon: Icons.g_translate_rounded, color: Color(0xFF467BA1), isOpen: isOpen),
-            MenuContent(index: 2, title: 'Converter', icon: Icons.currency_exchange_rounded, color: Color(0xFF467BA1), isOpen: isOpen),
-            MenuContent(index: 3, title: 'Nearest Money Changer', icon: Icons.attach_money_rounded, color: Color(0xFF467BA1), isOpen: isOpen)
+            MenuContent(index: 1, title:  'Translator', icon: Icons.g_translate_rounded, color: Color(0xFFF50057), isOpen: isOpen),
+            MenuContent(index: 2, title: 'Converter', icon: Icons.currency_exchange_rounded, color: Color(0xFFF50057), isOpen: isOpen),
+            MenuContent(index: 3, title: 'Nearest Money Changer', icon: Icons.attach_money_rounded, color: Color(0xFFF50057), isOpen: isOpen)
           ],
         ),
       ),
@@ -343,7 +343,7 @@ class _MenuContentState extends State<MenuContent> with SingleTickerProviderStat
 //               index: 1,
 //               title: 'Translator',
 //               icon: Icons.g_translate_rounded,
-//               color: Color(0xFF467BA1),
+//               color: Color(0xFFF50057),
 //               isOpen: isOpen,
 //               onTap: () => widget.onMenuItemSelected(1),
 //             ),
@@ -351,7 +351,7 @@ class _MenuContentState extends State<MenuContent> with SingleTickerProviderStat
 //               index: 2,
 //               title: 'Converter',
 //               icon: Icons.currency_exchange_rounded,
-//               color: Color(0xFF467BA1),
+//               color: Color(0xFFF50057),
 //               isOpen: isOpen,
 //               onTap: () => widget.onMenuItemSelected(2),
 //             ),
@@ -359,7 +359,7 @@ class _MenuContentState extends State<MenuContent> with SingleTickerProviderStat
 //               index: 3,
 //               title: 'Nearest Money Changer',
 //               icon: Icons.attach_money_rounded,
-//               color: Color(0xFF467BA1),
+//               color: Color(0xFFF50057),
 //               isOpen: isOpen,
 //               onTap: () => widget.onMenuItemSelected(3),
 //             ),

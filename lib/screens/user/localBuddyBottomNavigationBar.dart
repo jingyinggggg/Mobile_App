@@ -28,7 +28,7 @@ class LocalBuddyCustomBottomNavBar extends StatelessWidget {
         }),
         iconTheme: WidgetStateProperty.resolveWith<IconThemeData>((Set<WidgetState> states) {
           if (states.contains(WidgetState.selected)) {
-            return const IconThemeData(color: Color(0xFF749CB9));
+            return const IconThemeData(color: Color(0xFFE57373));
           }
           return const IconThemeData(color: Colors.white);
         }),
@@ -36,7 +36,7 @@ class LocalBuddyCustomBottomNavBar extends StatelessWidget {
       child: NavigationBar(
         onDestinationSelected: onTap,
         selectedIndex: currentIndex,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         destinations: const [
           NavigationDestination(
             icon: Icon(Icons.explore, size: 20),

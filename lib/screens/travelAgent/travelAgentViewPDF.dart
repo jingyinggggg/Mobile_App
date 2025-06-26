@@ -22,7 +22,7 @@ class _TravelAgentViewPDFScreenState extends State<TravelAgentViewPDFScreen> {
       appBar: AppBar(
         title: const Text("PDF View"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',

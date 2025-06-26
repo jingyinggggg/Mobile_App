@@ -194,7 +194,7 @@ class _AdminHomepageScreenState extends State<AdminHomepageScreen> {
       appBar: AppBar(
         title: Text(_screenTitles[currentPageIndex]),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -250,11 +250,11 @@ class _AdminHomepageScreenState extends State<AdminHomepageScreen> {
         backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
-          side: const BorderSide(color: Color(0xFF467BA1), width: 2),
+          side: const BorderSide(color: Color(0xFFF50057), width: 2),
         ),
         minimumSize: Size(screenWidth * 0.4, screenWidth * 0.4), // 40% of screen width for the button
         elevation: 10,
-        shadowColor: const Color(0xFF467BA1),
+        shadowColor: const Color(0xFFF50057),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -270,7 +270,7 @@ class _AdminHomepageScreenState extends State<AdminHomepageScreen> {
             textAlign: TextAlign.center,
             style: const TextStyle(
               fontSize: 16,
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               fontWeight: FontWeight.bold,
             ),
           ),

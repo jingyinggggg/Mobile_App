@@ -232,24 +232,38 @@ class _TravelAgentCarMaintenanceScreenState extends State<TravelAgentCarMaintena
     return Scaffold(
       resizeToAvoidBottomInset: true,
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text("Car Maintenance"),
-        centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-          fontFamily: 'Inika',
-          fontWeight: FontWeight.bold,
-          fontSize: defaultAppBarTitleFontSize,
-        ),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-          onPressed: () {
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)], // Soft pink gradient
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+          child: AppBar(
+            title: const Text("Car Maintenance"),
+            centerTitle: true,
+            backgroundColor: Colors.transparent, // Makes the gradient visible
+            elevation: 0,
+            titleTextStyle: const TextStyle(
+              color: Colors.black,
+              fontFamily: 'Inika',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
+              onPressed: () {
+                
             Navigator.push(
-              context,
+              context, 
               MaterialPageRoute(builder: (context) => TravelAgentViewCarListingScreen(userId: widget.userId)),
             );
-          },
+              },
+            ),
+          ),
         ),
       ),
       body: Stack(
@@ -361,7 +375,7 @@ class _TravelAgentCarMaintenanceScreenState extends State<TravelAgentCarMaintena
                           ElevatedButton(
                             onPressed: () {_submitCarMaintenance();},
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: primaryColor,
+                              backgroundColor: Color(0xFFF50057),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10), // Button radius
                               ),
@@ -396,7 +410,7 @@ class _TravelAgentCarMaintenanceScreenState extends State<TravelAgentCarMaintena
                                 width: double.infinity,
                                 decoration: BoxDecoration(color: Colors.white),
                                 child: Table(
-                                  border: TableBorder.all(color: primaryColor, width: 1.5),
+                                  border: TableBorder.all(color: Color(0xFFF50057), width: 1.5),
                                   columnWidths: {
                                     0: FixedColumnWidth(40), // Width for the "No" column
                                     1: FixedColumnWidth(300), // Width for the "Maintenance Date" column
@@ -457,7 +471,7 @@ class _TravelAgentCarMaintenanceScreenState extends State<TravelAgentCarMaintena
                       //         width: double.infinity,
                       //         decoration: BoxDecoration(color: Colors.white),
                       //         child: Table(
-                      //           border: TableBorder.all(color: primaryColor, width: 1.5),
+                      //           border: TableBorder.all(color: Color(0xFFF50057), width: 1.5),
                       //           columnWidths: {
                       //             0: FixedColumnWidth(40), // Width for the "No" column
                       //             1: FixedColumnWidth(150), // Width for the "Start Date" column
@@ -539,22 +553,22 @@ class _TravelAgentCarMaintenanceScreenState extends State<TravelAgentCarMaintena
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
-              width: 2.5,
+              color: Color(0xFFF50057),
+              width: 1.5,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
-              width: 2.5,
+              color: Color(0xFFF50057),
+              width: 1.5,
             ),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
-              width: 2.5,
+              color: Color(0xFFF50057),
+              width: 1.5,
             ),
           ),
           floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -572,7 +586,7 @@ class _TravelAgentCarMaintenanceScreenState extends State<TravelAgentCarMaintena
           suffixIcon: IconButton(
             icon: const Icon(
               Icons.calendar_today_outlined,
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               size: 20,
             ),
             onPressed: () => onSelect(context),
@@ -600,22 +614,22 @@ class _TravelAgentCarMaintenanceScreenState extends State<TravelAgentCarMaintena
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -761,22 +775,22 @@ class _TravelAgentCarMaintenanceScreenState extends State<TravelAgentCarMaintena
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -788,7 +802,7 @@ class _TravelAgentCarMaintenanceScreenState extends State<TravelAgentCarMaintena
         suffixIcon: IconButton(
           icon: const Icon(
             Icons.calendar_today_outlined,
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             size: 20,
           ),
           onPressed: () {

@@ -216,7 +216,7 @@ class _WishlistScreenState extends State<WishlistScreen> with SingleTickerProvid
         appBar: AppBar(
           title: const Text("Wishlist"),
           centerTitle: true,
-          backgroundColor: const Color(0xFF749CB9),
+          backgroundColor: const Color(0xFFE57373),
           titleTextStyle: const TextStyle(
             color: Colors.white,
             fontFamily: 'Inika',
@@ -234,9 +234,9 @@ class _WishlistScreenState extends State<WishlistScreen> with SingleTickerProvid
           children: [
 
             const TabBar(
-              labelColor: Color(0xFF467BA1),
+              labelColor: Color(0xFFF50057),
               unselectedLabelColor: Colors.grey,
-              indicatorColor: Color(0xFF467BA1),
+              indicatorColor: Color(0xFFF50057),
               indicatorSize: TabBarIndicatorSize.tab,
               labelStyle: TextStyle(
                 fontSize: 15,

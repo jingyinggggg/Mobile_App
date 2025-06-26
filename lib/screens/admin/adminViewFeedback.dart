@@ -84,7 +84,7 @@ class _AdminViewFeedbackScreenState extends State<AdminViewFeedbackScreen> {
         appBar: AppBar(
           title: const Text("Feedback"),
           centerTitle: true,
-          backgroundColor: const Color(0xFF749CB9),
+          backgroundColor: const Color(0xFFE57373),
           titleTextStyle: const TextStyle(
             color: Colors.white,
             fontFamily: 'Inika',
@@ -128,7 +128,7 @@ class _AdminViewFeedbackScreenState extends State<AdminViewFeedbackScreen> {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       border: Border.all(
-                        color: Color(0xFF467BA1),
+                        color: Color(0xFFF50057),
                         width: 2.0,
                       ),
                     ),

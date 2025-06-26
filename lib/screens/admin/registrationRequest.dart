@@ -118,7 +118,7 @@ class _RegistrationRequesrScreenState extends State<RegistrationRequestScreen> {
         appBar: AppBar( 
           title: Text("Registration Request"), 
           centerTitle: true,
-          backgroundColor: const Color(0xFF749CB9),
+          backgroundColor: const Color(0xFFE57373),
           titleTextStyle: const TextStyle(
             color: Colors.white,
             fontFamily: 'Inika',
@@ -180,8 +180,8 @@ class _RegistrationRequesrScreenState extends State<RegistrationRequestScreen> {
                     ),
                   ),
                 ],
-                labelColor: Color(0xFF467BA1),
-                indicatorColor: Color(0xFF467BA1),
+                labelColor: Color(0xFFF50057),
+                indicatorColor: Color(0xFFF50057),
                 indicatorWeight: 3,
                 unselectedLabelColor: Color(0xFFA4B4C0), // Unselected tab text color
                 indicatorPadding: EdgeInsets.zero,
@@ -239,7 +239,7 @@ class _RegistrationRequesrScreenState extends State<RegistrationRequestScreen> {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(
-                    color: Color(0xFF467BA1), 
+                    color: Color(0xFFF50057), 
                     width: 2.0, 
                   ),
                 ),
@@ -271,7 +271,7 @@ class _RegistrationRequesrScreenState extends State<RegistrationRequestScreen> {
             }, 
             icon: Icon(Icons.edit_document),
             iconSize: 25,
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             tooltip: 'Review Request',
           ),
         ],
@@ -296,7 +296,7 @@ class _RegistrationRequesrScreenState extends State<RegistrationRequestScreen> {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(
-                    color: Color(0xFF467BA1), 
+                    color: Color(0xFFF50057), 
                     width: 2.0,
                   ),
                 ),
@@ -359,7 +359,7 @@ class _RegistrationRequesrScreenState extends State<RegistrationRequestScreen> {
             }, 
             icon: Icon(Icons.edit_document),
             iconSize: 25,
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             tooltip: 'Review Request',
           ),
         ],

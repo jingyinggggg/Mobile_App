@@ -14,9 +14,9 @@ class RowButtons extends StatelessWidget{
       height: 70,
       // padding: EdgeInsets.only(top: 60, bottom: 20),
       decoration: BoxDecoration(
-        // color: Color(0xFF467BA1),
+        // color: Color(0xFFF50057),
         color: Colors.white,
-        border: Border(bottom: BorderSide(color: Color(0xFF467BA1), width: 1.5))
+        border: Border(bottom: BorderSide(color: Color(0xFFF50057), width: 1.5))
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -52,7 +52,7 @@ class RowButtons extends StatelessWidget{
         style: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
-          color: Color(0xFF467BA1)
+          color: Color(0xFFF50057)
         ),
       ),
     );

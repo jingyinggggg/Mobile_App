@@ -167,7 +167,7 @@ class _ChatScreenState extends State<ChatScreen> with AutomaticKeepAliveClientMi
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 236, 236, 236),
       resizeToAvoidBottomInset: true,
       body: Stack(
         children: [
@@ -186,15 +186,15 @@ class _ChatScreenState extends State<ChatScreen> with AutomaticKeepAliveClientMi
                       prefixIcon: Icon(Icons.search, color: Colors.grey.shade500, size: 20,),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.blueGrey, width: 2), 
+                        borderSide: BorderSide(color: Color(0xFFF50057), width: 2), 
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.blueGrey, width: 2), 
+                        borderSide: BorderSide(color: Color(0xFFF50057), width: 2), 
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Color(0xFF467BA1), width: 2), 
+                        borderSide: BorderSide(color: Color(0xFFF50057), width: 2), 
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -266,8 +266,8 @@ class _ChatScreenState extends State<ChatScreen> with AutomaticKeepAliveClientMi
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: Color(0xFF467BA1),
-                  width: 2.0,
+                  color: Color(0xFFE57373),
+                  width: 1.0,
                 ),
               ),
               child: CircleAvatar(

@@ -138,12 +138,12 @@ class _TravelAgentPreviewTourPackageScreenState extends State<TravelAgentPreview
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 236, 236, 236),
       resizeToAvoidBottomInset: true,
       appBar: AppBar(
         title: const Text("Group Tour"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -376,7 +376,7 @@ class _TravelAgentPreviewTourPackageScreenState extends State<TravelAgentPreview
                                 ],
                               ),
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF467BA1),
+                                backgroundColor: const Color(0xFFF50057),
                                 padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(0),
@@ -433,7 +433,7 @@ class _TravelAgentPreviewTourPackageScreenState extends State<TravelAgentPreview
                                     ),
                                   ),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFF467BA1),
+                              backgroundColor: const Color(0xFFF50057),
                               textStyle: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
@@ -456,7 +456,7 @@ class _TravelAgentPreviewTourPackageScreenState extends State<TravelAgentPreview
                         //     ),
                         //   ),
                         //   style: ElevatedButton.styleFrom(
-                        //     backgroundColor: const Color(0xFF467BA1),
+                        //     backgroundColor: const Color(0xFFF50057),
                         //     padding: const EdgeInsets.symmetric(vertical: 15),
                         //     textStyle: const TextStyle(
                         //       fontSize: 20,
@@ -522,11 +522,11 @@ class _TravelAgentPreviewTourPackageScreenState extends State<TravelAgentPreview
                   width: 60,
                   height: 45,
                   decoration: BoxDecoration(
-                    color: const Color(0xFF467BA1),
+                    color: const Color(0xFFF50057),
                     border: Border(
-                      left: BorderSide(color: Color(0xFF467BA1), width: 1.5),
-                      top: BorderSide(color: Color(0xFF467BA1), width: 1.5),
-                      bottom: BorderSide(color: Color(0xFF467BA1), width: 1.5),
+                      left: BorderSide(color: Color(0xFFF50057), width: 1.5),
+                      top: BorderSide(color: Color(0xFFF50057), width: 1.5),
+                      bottom: BorderSide(color: Color(0xFFF50057), width: 1.5),
                       right: BorderSide.none,
                     ),
                   ),
@@ -548,9 +548,9 @@ class _TravelAgentPreviewTourPackageScreenState extends State<TravelAgentPreview
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border(
-                        left: BorderSide(color: Color(0xFF467BA1), width: 1.5),
-                        top: BorderSide(color: Color(0xFF467BA1), width: 1.5),
-                        bottom: BorderSide(color: Color(0xFF467BA1), width: 1.5),
+                        left: BorderSide(color: Color(0xFFF50057), width: 1.5),
+                        top: BorderSide(color: Color(0xFFF50057), width: 1.5),
+                        bottom: BorderSide(color: Color(0xFFF50057), width: 1.5),
                         right: BorderSide.none,
                       ),
                     ),
@@ -560,7 +560,7 @@ class _TravelAgentPreviewTourPackageScreenState extends State<TravelAgentPreview
                       style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w900,
-                        color: Color(0xFF467BA1),
+                        color: Color(0xFFF50057),
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -572,7 +572,7 @@ class _TravelAgentPreviewTourPackageScreenState extends State<TravelAgentPreview
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  border: Border.all(color: const Color(0xFF467BA1), width: 1.5),
+                  border: Border.all(color: const Color(0xFFF50057), width: 1.5),
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 child: Column(
@@ -634,7 +634,7 @@ Widget availabilityComponent(Map<String, dynamic> data) {
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(color: const Color(0xFF467BA1), width: 1.0),
+            border: Border.all(color: const Color(0xFFF50057), width: 1.0),
           ),
           child: Table(
             columnWidths: const {
@@ -642,7 +642,7 @@ Widget availabilityComponent(Map<String, dynamic> data) {
               1: FlexColumnWidth(1.1),
               2: FlexColumnWidth(1.2),
             },
-            border: TableBorder.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: TableBorder.all(color: const Color(0xFFF50057), width: 1.5),
             children: [
               // Header row
               TableRow(
@@ -677,7 +677,7 @@ Widget availabilityComponent(Map<String, dynamic> data) {
       decoration: const BoxDecoration(
         color: Colors.white,
         border: Border(
-          left: BorderSide(color: Color(0xFF467BA1), width: 1.0),
+          left: BorderSide(color: Color(0xFFF50057), width: 1.0),
         ),
       ),
       child: Padding(
@@ -700,7 +700,7 @@ Widget availabilityComponent(Map<String, dynamic> data) {
   Widget _buildTableHeaderCell(String label) {
     return Container(
       padding: const EdgeInsets.all(8.0),
-      color: const Color(0xFF467BA1).withOpacity(0.6),
+      color: const Color(0xFFF50057).withOpacity(0.6),
       child: Center(
         child: Text(
           label,

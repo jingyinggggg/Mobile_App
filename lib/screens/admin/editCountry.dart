@@ -75,7 +75,7 @@ class _AdminEditCountryScreenState extends State<AdminEditCountryScreen> {
       appBar: AppBar(
         title: const Text("Edit Country"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -120,7 +120,7 @@ class _AdminEditCountryScreenState extends State<AdminEditCountryScreen> {
                       _updateCountry();
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF467BA1),
+                      backgroundColor: const Color(0xFFF50057),
                       textStyle: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -169,7 +169,7 @@ class _AdminEditCountryScreenState extends State<AdminEditCountryScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -194,14 +194,14 @@ class _AdminEditCountryScreenState extends State<AdminEditCountryScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         suffixIcon: IconButton(
           icon: const Icon(
             Icons.image,
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             size: 25,
           ),
           onPressed: () {

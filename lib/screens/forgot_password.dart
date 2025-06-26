@@ -217,28 +217,28 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         labelText: 'Email',
         prefixIcon: const Icon(
           Icons.email,
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
         ),
         filled: true,
         fillColor: Colors.white.withOpacity(0.5),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -274,7 +274,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         labelText: "New Password",
         prefixIcon: const Icon(
           Icons.lock,
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
         ),
         suffixIcon: IconButton(
           onPressed: () {
@@ -293,21 +293,21 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -343,7 +343,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         labelText: "Confirm New Password",
         prefixIcon: const Icon(
           Icons.lock,
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
         ),
         suffixIcon: IconButton(
           onPressed: () {
@@ -362,21 +362,21 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -485,7 +485,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                                   ),
                                 ),
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xFF467BA1),
+                                  backgroundColor: const Color(0xFFF50057),
                                   padding: EdgeInsets.symmetric(vertical: screenHeight * 0.02), // Responsive vertical padding
                                   textStyle: TextStyle(
                                     fontSize: screenWidth * 0.05, // Responsive font size

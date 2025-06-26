@@ -295,25 +295,39 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: true,
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text("Car Rental"),
-        centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-          fontFamily: 'Inika',
-          fontWeight: FontWeight.bold,
-          fontSize: 20,
-        ),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-          onPressed: () {
+      backgroundColor: Color.fromARGB(255, 236, 236, 236),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)], // Soft pink gradient
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+          child: AppBar(
+            title: const Text("Car Rental"),
+            centerTitle: true,
+            backgroundColor: Colors.transparent, // Makes the gradient visible
+            elevation: 0,
+            titleTextStyle: const TextStyle(
+              color: Colors.black,
+              fontFamily: 'Inika',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
+              onPressed: () {
+                
             Navigator.push(
-              context,
+              context, 
               MaterialPageRoute(builder: (context) => TravelAgentViewCarListingScreen(userId: widget.userId))
             );
-          },
+              },
+            ),
+          ),
         ),
       ),
       body:Stack(
@@ -410,29 +424,29 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
                           prefixIcon: Icon(
                             Icons.location_on,
                             size: 25,
-                            color: primaryColor,
+                            color: Color(0xFFF50057),
                           ),
                           filled: true,
                           fillColor: Colors.white,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
-                              width: 2.5,
+                              color: Color(0xFFF50057),
+                              width: 1.5,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
-                              width: 2.5,
+                              color: Color(0xFFF50057),
+                              width: 1.5,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
-                              width: 2.5,
+                              color: Color(0xFFF50057),
+                              width: 1.5,
                             ),
                           ),
                           floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -456,7 +470,7 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
                         Container(
                           padding: const EdgeInsets.symmetric(vertical: 5),
                           decoration: BoxDecoration(
-                            border: Border.all(color: Color(0xFF467BA1), width: 2.5),
+                            border: Border.all(color: Color(0xFFF50057), width: 1.5),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: Column(
@@ -497,29 +511,29 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
                           prefixIcon: Icon(
                             Icons.location_on,
                             size: 25,
-                            color: primaryColor,
+                            color: Color(0xFFF50057),
                           ),
                           filled: true,
                           fillColor: Colors.white,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
-                              width: 2.5,
+                              color: Color(0xFFF50057),
+                              width: 1.5,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
-                              width: 2.5,
+                              color: Color(0xFFF50057),
+                              width: 1.5,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
-                              color: Color(0xFF467BA1),
-                              width: 2.5,
+                              color: Color(0xFFF50057),
+                              width: 1.5,
                             ),
                           ),
                           floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -543,7 +557,7 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
                         Container(
                           padding: const EdgeInsets.symmetric(vertical: 5),
                           decoration: BoxDecoration(
-                            border: Border.all(color: Color(0xFF467BA1), width: 2.5),
+                            border: Border.all(color: Color(0xFFF50057), width: 1.5),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: Column(
@@ -629,7 +643,7 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
                             ),
                           ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF467BA1),
+                        backgroundColor: const Color(0xFFF50057),
                         textStyle: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -668,22 +682,22 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -714,22 +728,22 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
-            width: 2.5,
+            color: Color(0xFFF50057),
+            width: 1.5,
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -783,7 +797,7 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
               icon: const Icon(
                 Icons.edit,
                 size: 25,
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
               ),
             ),
           ],
@@ -795,7 +809,7 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
-                border: Border.all(color: const Color(0xFF467BA1), width: 3),
+                border: Border.all(color: const Color(0xFFF50057), width: 2),
               ),
               child: Image.memory(
                 _carImage!,
@@ -809,7 +823,7 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  border: Border.all(color: const Color(0xFF467BA1), width: 3),
+                  border: Border.all(color: const Color(0xFFF50057), width: 3),
                 ),
                 child: Image.network(
                   existingImagePath!,

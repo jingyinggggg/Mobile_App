@@ -137,7 +137,7 @@ class _LocalBuddyMeScreenState extends State<LocalBuddyMeScreen> {
                                   );
                                 }, 
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: Color(0xFF467BA1),
+                                  backgroundColor: Color(0xFFF50057),
                                   textStyle: const TextStyle(
                                     fontSize: defaultLabelFontSize,
                                     fontWeight: FontWeight.bold,
@@ -169,7 +169,7 @@ class _LocalBuddyMeScreenState extends State<LocalBuddyMeScreen> {
                                   );
                                 }, 
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: Color(0xFF467BA1),
+                                  backgroundColor: Color(0xFFF50057),
                                   textStyle: const TextStyle(
                                     fontSize: defaultLabelFontSize,
                                     fontWeight: FontWeight.bold,

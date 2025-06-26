@@ -160,7 +160,7 @@ class _CarRentalHomepageScreenState extends State<CarRentalHomepageScreen>{
       appBar: AppBar(
         title: const Text("Car Rental"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -209,7 +209,7 @@ class _CarRentalHomepageScreenState extends State<CarRentalHomepageScreen>{
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                      borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),

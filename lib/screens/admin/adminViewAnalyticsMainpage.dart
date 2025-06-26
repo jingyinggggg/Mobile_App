@@ -313,7 +313,7 @@ class _AdminViewAnalyticsMainpageScreenState extends State<AdminViewAnalyticsMai
         appBar: AppBar(
           title: const Text("Analytics"),
           centerTitle: true,
-          backgroundColor: const Color(0xFF749CB9),
+          backgroundColor: const Color(0xFFE57373),
           titleTextStyle: const TextStyle(
             color: Colors.white,
             fontFamily: 'Inika',
@@ -406,7 +406,7 @@ class _AdminViewAnalyticsMainpageScreenState extends State<AdminViewAnalyticsMai
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                          borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                         ),
                         errorBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
@@ -469,7 +469,7 @@ class _AdminViewAnalyticsMainpageScreenState extends State<AdminViewAnalyticsMai
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                           ),
                           hintText: "Search local buddy name...",
                           hintStyle: TextStyle(

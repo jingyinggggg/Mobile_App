@@ -175,7 +175,7 @@ class _UpdatePasswordScreenState extends State<UpdatePasswordScreen> {
         labelText: labelText,
         prefixIcon: const Icon(
           Icons.lock,
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
           size: 18,
         ),
         suffixIcon: IconButton(
@@ -188,21 +188,21 @@ class _UpdatePasswordScreenState extends State<UpdatePasswordScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -230,7 +230,7 @@ Widget build(BuildContext context) {
     appBar: AppBar(
       title: const Text("Update Password"),
       centerTitle: true,
-      backgroundColor: const Color(0xFF749CB9),
+      backgroundColor: const Color(0xFFE57373),
       titleTextStyle: const TextStyle(
         color: Colors.white,
         fontFamily: 'Inika',
@@ -305,7 +305,7 @@ Widget build(BuildContext context) {
                               ),
                             ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF467BA1),
+                        backgroundColor: const Color(0xFFF50057),
                         padding: const EdgeInsets.symmetric(vertical: 15),
                         textStyle: const TextStyle(
                           fontSize: 18,

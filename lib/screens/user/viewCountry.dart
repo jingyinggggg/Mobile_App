@@ -70,7 +70,7 @@ class _ViewCountryScreenState extends State<ViewCountryScreen> {
       appBar: AppBar(
         title: const Text("Group Tour"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -114,7 +114,7 @@ class _ViewCountryScreenState extends State<ViewCountryScreen> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Color(0xFF467BA1), width: 2), // Black border when focused
+                        borderSide: BorderSide(color: Color(0xFFF50057), width: 2), // Black border when focused
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),

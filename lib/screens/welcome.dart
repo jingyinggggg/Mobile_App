@@ -82,7 +82,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF467BA1),
+                        backgroundColor: const Color(0xFFF50057),
                         padding: const EdgeInsets.symmetric(horizontal: 90, vertical: 20),
                         textStyle: const TextStyle(
                           fontSize: 20, 

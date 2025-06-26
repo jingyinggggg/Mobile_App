@@ -135,38 +135,41 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
     @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 236, 236, 236),
       resizeToAvoidBottomInset: true,
-      appBar: AppBar(
-        title: const Text("Group Tour"),
-        centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-          fontFamily: 'Inika',
-          fontWeight: FontWeight.bold,
-          fontSize: 20,
-        ),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-          onPressed: () {
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)], // Soft pink gradient
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+          child: AppBar(
+            title: const Text("Group Tour"),
+            centerTitle: true,
+            backgroundColor: Colors.transparent, // Makes the gradient visible
+            elevation: 0,
+            titleTextStyle: const TextStyle(
+              color: Colors.black,
+              fontFamily: 'Inika',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
+              onPressed: () {
+                
             Navigator.push(
               context, 
               MaterialPageRoute(builder: (context) => TravelAgentViewCityScreen(userId: widget.userId, countryName: widget.countryName,))
             );
-          },
-        ),
-        actions: <Widget>[
-          IconButton(
-            icon: const Icon(Icons.add, color: Colors.white, size: 30,),
-            onPressed: () {
-              Navigator.push(
-                context, 
-                MaterialPageRoute(builder: (context) => TravelAgentAddTourPackageScreen(userId: widget.userId, countryName: widget.countryName, cityName: widget.cityName,))
-              );
-            },
+              },
+            ),
           ),
-        ],
+        ),
       ),
       body: Column(
         children: [
@@ -186,15 +189,15 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
                   prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                    borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                    borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                    borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                   ),
                   errorBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
@@ -362,7 +365,7 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
   //       appBar: AppBar(
   //         title: const Text("Group Tour"),
   //         centerTitle: true,
-  //         backgroundColor: const Color(0xFF749CB9),
+  //         backgroundColor: const Color(0xFFE57373),
   //         titleTextStyle: const TextStyle(
   //           color: Colors.white,
   //           fontFamily: 'Inika',
@@ -416,7 +419,7 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
   //                   ),
   //                   focusedBorder: OutlineInputBorder(
   //                     borderRadius: BorderRadius.circular(10),
-  //                     borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+  //                     borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
   //                   ),
   //                   errorBorder: OutlineInputBorder(
   //                     borderRadius: BorderRadius.circular(10),
@@ -434,9 +437,9 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
   //           ),
 
   //           const TabBar(
-  //             labelColor: Color(0xFF467BA1),
+  //             labelColor: Color(0xFFF50057),
   //             unselectedLabelColor: Colors.grey,
-  //             indicatorColor: Color(0xFF467BA1),
+  //             indicatorColor: Color(0xFFF50057),
   //             tabs: [
   //               Tab(text: "Unpublished"),
   //               Tab(text: "Published")

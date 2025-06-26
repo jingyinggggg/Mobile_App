@@ -225,7 +225,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                         backgroundColor: Colors.white, // Button background color
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10), // Rounded corners
-                          side: BorderSide(color: Color(0xFF467BA1), width: 1.5),
+                          side: BorderSide(color: Color(0xFFF50057), width: 1.5),
                         ),
                         minimumSize: Size(screenWidth * 0.35, screenHeight * 0.1)
                       ),
@@ -236,14 +236,14 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                             image: AssetImage("images/car-rental.png"),
                             width: screenWidth * 0.1,
                             height: screenWidth * 0.1,
-                            color: Color(0xFF467BA1),
+                            color: Color(0xFFF50057),
                           ),
                           SizedBox(height: 10),
                           Text(
                             "Car Rental",
                             style: TextStyle(
                               fontSize: 14,
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                             ),
                           ),
                           SizedBox(height: 10),
@@ -262,7 +262,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                         backgroundColor: Colors.white,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
-                          side: BorderSide(color: Color(0xFF467BA1), width: 1.5),
+                          side: BorderSide(color: Color(0xFFF50057), width: 1.5),
                         ),
                         minimumSize: Size(screenWidth * 0.35, screenHeight * 0.1)
                       ),
@@ -273,14 +273,14 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                             image: AssetImage("images/location.png"),
                             width: screenWidth * 0.1,
                             height: screenWidth * 0.1,
-                            color: Color(0xFF467BA1),
+                            color: Color(0xFFF50057),
                           ),
                           SizedBox(height: 10),
                           Text(
                             "Local Buddy",
                             style: TextStyle(
                               fontSize: 14,
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                             ),
                           ),
                           SizedBox(height: 10),
@@ -299,7 +299,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                         backgroundColor: Colors.white,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
-                          side: BorderSide(color: Color(0xFF467BA1), width: 1.5),
+                          side: BorderSide(color: Color(0xFFF50057), width: 1.5),
                         ),
                         minimumSize: Size(screenWidth * 0.35, screenHeight * 0.1)
                       ),
@@ -310,14 +310,14 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                             image: AssetImage("images/tour-guide.png"),
                             width: screenWidth * 0.1,
                             height: screenWidth * 0.1,
-                            color: Color(0xFF467BA1),
+                            color: Color(0xFFF50057),
                           ),
                           SizedBox(height: 10),
                           Text(
                             "Group Tour",
                             style: TextStyle(
                               fontSize: 14,
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                             ),
                           ),
                           SizedBox(height: 10),
@@ -336,7 +336,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                         backgroundColor: Colors.white,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
-                          side: BorderSide(color: Color(0xFF467BA1), width: 1.5),
+                          side: BorderSide(color: Color(0xFFF50057), width: 1.5),
                         ),
                         minimumSize: Size(screenWidth * 0.35, screenHeight * 0.1)
                       ),
@@ -346,14 +346,14 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                           Icon(
                             Icons.translate,
                             size: screenWidth * 0.1,
-                            color: Color(0xFF467BA1),
+                            color: Color(0xFFF50057),
                           ),
                           SizedBox(height: 10),
                           Text(
                             "Translator",
                             style: TextStyle(
                               fontSize: 14,
-                              color: Color(0xFF467BA1),
+                              color: Color(0xFFF50057),
                             ),
                           ),
                           SizedBox(height: 10),
@@ -694,7 +694,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
       appBar: AppBar(
         title: Text(_screenTitles[currentPageIndex]),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',

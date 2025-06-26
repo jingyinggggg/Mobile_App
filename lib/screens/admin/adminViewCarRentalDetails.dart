@@ -106,7 +106,7 @@ class _AdminViewCarRentalDetailsScreenState extends State<AdminViewCarRentalDeta
       appBar: AppBar(
         title: const Text("Car Rental"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -152,7 +152,7 @@ class _AdminViewCarRentalDetailsScreenState extends State<AdminViewCarRentalDeta
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                         decoration: BoxDecoration(
-                          color: Color(0xFF749CB9),
+                          color: Color(0xFFE57373),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.black.withOpacity(0.4), // Adjust shadow color and opacity as needed
@@ -468,7 +468,7 @@ class _AdminViewCarRentalDetailsScreenState extends State<AdminViewCarRentalDeta
       padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: const Color(0xFF749CB9), width: 1.5),
+        border: Border.all(color: const Color(0xFFE57373), width: 1.5),
       ),
       child: Column(
         children: [

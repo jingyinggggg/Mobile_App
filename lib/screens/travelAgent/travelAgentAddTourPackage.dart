@@ -693,7 +693,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
       appBar: AppBar(
         title: const Text("Add Tour"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -745,7 +745,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
                             ),
                       style: ElevatedButton.styleFrom(
                         minimumSize: Size(20,35),
-                        backgroundColor: const Color(0xFF467BA1),
+                        backgroundColor: const Color(0xFFF50057),
                         textStyle: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -770,7 +770,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
                             ),
                       style: ElevatedButton.styleFrom(
                         minimumSize: Size(20,35),
-                        backgroundColor: const Color(0xFF467BA1),
+                        backgroundColor: const Color(0xFFF50057),
                         textStyle: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -799,7 +799,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
                             ),
                       style: ElevatedButton.styleFrom(
                         minimumSize: Size(20,35),
-                        backgroundColor: const Color(0xFF467BA1),
+                        backgroundColor: const Color(0xFFF50057),
                         textStyle: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -830,7 +830,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
                               ),
                             ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF467BA1),
+                        backgroundColor: const Color(0xFFF50057),
                         textStyle: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -877,18 +877,18 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
             fillColor: Colors.white,
             border: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             enabledBorder: OutlineInputBorder(
-              borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2.5),
+              borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
             ),
             floatingLabelBehavior: FloatingLabelBehavior.always,
           ),
@@ -920,18 +920,18 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
             fillColor: Colors.white,
             border: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             enabledBorder: OutlineInputBorder(
-              borderSide: const BorderSide(color: Color(0xFF467BA1), width: 2.5),
+              borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
             ),
             floatingLabelBehavior: FloatingLabelBehavior.always,
           ),
@@ -957,7 +957,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: Border.all(color: const Color(0xFFF50057), width: 1.5),
             borderRadius: BorderRadius.circular(4),
           ),
           child: Table(
@@ -966,7 +966,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
               1: FlexColumnWidth(2.7),
               2: FlexColumnWidth(0.4),
             },
-            border: TableBorder.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: TableBorder.all(color: const Color(0xFFF50057), width: 1.5),
             children: [
               TableRow(
                 children: [
@@ -1021,7 +1021,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: Border.all(color: const Color(0xFFF50057), width: 1.5),
             borderRadius: BorderRadius.circular(4),
           ),
           child: Table(
@@ -1031,7 +1031,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
               2: FlexColumnWidth(1.7),
               3: FlexColumnWidth(0.4),
             },
-            border: TableBorder.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: TableBorder.all(color: const Color(0xFFF50057), width: 1.5),
             children: [
               TableRow(
                 children: [
@@ -1087,7 +1087,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: Border.all(color: const Color(0xFFF50057), width: 1.5),
             borderRadius: BorderRadius.circular(4),
           ),
           child: Table(
@@ -1098,7 +1098,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
               3: FlexColumnWidth(1.1),
               4: FlexColumnWidth(0.4),
             },
-            border: TableBorder.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: TableBorder.all(color: const Color(0xFFF50057), width: 1.5),
             children: [
               TableRow(
                 children: [
@@ -1168,7 +1168,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: Border.all(color: const Color(0xFFF50057), width: 1.5),
             borderRadius: BorderRadius.circular(4),
           ),
           child: Table(
@@ -1179,7 +1179,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
               3: FlexColumnWidth(1.1),
               // 4: FlexColumnWidth(0.4),
             },
-            border: TableBorder.all(color: const Color(0xFF467BA1), width: 1.5),
+            border: TableBorder.all(color: const Color(0xFFF50057), width: 1.5),
             children: [
               TableRow(
                 children: [
@@ -1247,19 +1247,19 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
             fillColor: Colors.white,
             border: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             enabledBorder: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
@@ -1267,7 +1267,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
             suffixIcon: IconButton(
               icon: const Icon(
                 Icons.image,
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 size: 30,
               ),
               onPressed: () {
@@ -1309,19 +1309,19 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
             fillColor: Colors.white,
             border: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
             enabledBorder: OutlineInputBorder(
               borderSide: const BorderSide(
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 width: 2.5,
               ),
             ),
@@ -1329,7 +1329,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
             suffixIcon: IconButton(
               icon: const Icon(
                 Icons.picture_as_pdf,
-                color: Color(0xFF467BA1),
+                color: Color(0xFFF50057),
                 size: 30,
               ),
               onPressed: () {
@@ -1345,7 +1345,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
   Widget _buildTableHeaderCell(String label) {
     return Container(
       padding: const EdgeInsets.all(8.0),
-      color: const Color(0xFF467BA1).withOpacity(0.6),
+      color: const Color(0xFFF50057).withOpacity(0.6),
       child: Center(
         child: Text(
           label,
@@ -1365,7 +1365,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
       decoration: const BoxDecoration(
         color: Colors.white,
         border: Border(
-          right: BorderSide(color: Color(0xFF467BA1), width: 1.0),
+          right: BorderSide(color: Color(0xFFF50057), width: 1.0),
         ),
       ),
       alignment: alignment,
@@ -1381,7 +1381,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
         decoration: const BoxDecoration(
           color: Colors.white,
           border: Border(
-            left: BorderSide(color: Color(0xFF467BA1), width: 1.0),
+            left: BorderSide(color: Color(0xFFF50057), width: 1.0),
           ),
         ),
         child: TextField(
@@ -1417,7 +1417,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
         decoration: const BoxDecoration(
           color: Colors.white,
           border: Border(
-            left: BorderSide(color: Color(0xFF467BA1), width: 1.0),
+            left: BorderSide(color: Color(0xFFF50057), width: 1.0),
           ),
         ),
         child: TextField(
@@ -1448,7 +1448,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
       decoration: const BoxDecoration(
         color: Colors.white,
         border: Border(
-          left: BorderSide(color: Color(0xFF467BA1), width: 1.0),
+          left: BorderSide(color: Color(0xFFF50057), width: 1.0),
         ),
       ),
       child: TextField(
@@ -1484,7 +1484,7 @@ class _TravelAgentAddTourPackageScreenState extends State<TravelAgentAddTourPack
       decoration: const BoxDecoration(
         color: Colors.white,
         border: Border(
-          left: BorderSide(color: Color(0xFF467BA1), width: 1.0),
+          left: BorderSide(color: Color(0xFFF50057), width: 1.0),
         ),
       ),
       child: TextField(

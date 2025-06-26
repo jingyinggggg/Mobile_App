@@ -176,7 +176,7 @@ class _TravelAgentUpdatePasswordScreenState extends State<TravelAgentUpdatePassw
         labelText: labelText,
         prefixIcon: const Icon(
           Icons.lock,
-          color: Color(0xFF467BA1),
+          color: Color(0xFFF50057),
         ),
         suffixIcon: IconButton(
           onPressed: onVisibilityToggle,
@@ -190,21 +190,21 @@ class _TravelAgentUpdatePasswordScreenState extends State<TravelAgentUpdatePassw
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -232,7 +232,7 @@ class _TravelAgentUpdatePasswordScreenState extends State<TravelAgentUpdatePassw
       appBar: AppBar(
         title: const Text("Update Password"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -303,7 +303,7 @@ class _TravelAgentUpdatePasswordScreenState extends State<TravelAgentUpdatePassw
                         ),
                       ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF467BA1),
+                  backgroundColor: const Color(0xFFF50057),
                   padding: const EdgeInsets.symmetric(vertical: 15),
                   textStyle: const TextStyle(
                     fontSize: 18,

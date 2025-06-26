@@ -326,7 +326,7 @@ class _TravelAgentViewCustomerDetailsScreenState extends State<TravelAgentViewCu
       appBar: AppBar(
         title: const Text("Booking"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -530,7 +530,7 @@ class _TravelAgentViewCustomerDetailsScreenState extends State<TravelAgentViewCu
                                           style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                         ),
                                         style: ElevatedButton.styleFrom(
-                                          backgroundColor: Color(0xFF749CB9),  
+                                          backgroundColor: Color(0xFFE57373),  
                                           foregroundColor: Colors.white,  
                                           shape: RoundedRectangleBorder(
                                             side: BorderSide(color: primaryColor)
@@ -599,7 +599,7 @@ class _TravelAgentViewCustomerDetailsScreenState extends State<TravelAgentViewCu
                                           style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                         ),
                                         style: ElevatedButton.styleFrom(
-                                          backgroundColor: Color(0xFF749CB9),  
+                                          backgroundColor: Color(0xFFE57373),  
                                           foregroundColor: Colors.white,  
                                           shape: RoundedRectangleBorder(
                                             side: BorderSide(color: primaryColor)
@@ -705,7 +705,7 @@ class _TravelAgentViewCustomerDetailsScreenState extends State<TravelAgentViewCu
                                           style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                         ),
                                         style: ElevatedButton.styleFrom(
-                                          backgroundColor: Color(0xFF749CB9),  
+                                          backgroundColor: Color(0xFFE57373),  
                                           foregroundColor: Colors.white,  
                                           shape: RoundedRectangleBorder(
                                             side: BorderSide(color: primaryColor)

@@ -97,7 +97,7 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF467BA1),
+                            backgroundColor: Color(0xFFF50057),
                             textStyle: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -140,7 +140,7 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Color(0xFF467BA1), width: 2),
+                              borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                             ),
                             hintText: "Search itinerary...",
                             hintStyle: TextStyle(
@@ -165,10 +165,10 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
                               );
                             },
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Color(0xFF467BA1),
+                              backgroundColor: Color(0xFFF50057),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10),
-                                side: BorderSide(color: Color(0xFF467BA1), width: 2),
+                                side: BorderSide(color: Color(0xFFF50057), width: 2),
                               ),
                             ),
                             child: Text(

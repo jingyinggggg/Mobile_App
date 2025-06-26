@@ -209,7 +209,7 @@ class _AIItineraryScreenState extends State<AIItineraryScreen> {
       appBar: AppBar(
         title: const Text("AI Itinerary"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF749CB9),
+        backgroundColor: const Color(0xFFE57373),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',
@@ -348,7 +348,7 @@ class _AIItineraryScreenState extends State<AIItineraryScreen> {
                             ),
                             style: ElevatedButton.styleFrom(
                               minimumSize: const Size(90, 45),
-                              backgroundColor: const Color(0xFF467BA1),
+                              backgroundColor: const Color(0xFFF50057),
                               textStyle: const TextStyle(
                                 fontSize: defaultLabelFontSize,
                                 fontWeight: FontWeight.w600,
@@ -385,7 +385,7 @@ class _AIItineraryScreenState extends State<AIItineraryScreen> {
                             ),
                             style: ElevatedButton.styleFrom(
                               minimumSize: const Size(90, 45),
-                              backgroundColor: const Color(0xFF467BA1),
+                              backgroundColor: const Color(0xFFF50057),
                               textStyle: const TextStyle(
                                 fontSize: defaultLabelFontSize,
                                 fontWeight: FontWeight.w600,
@@ -409,7 +409,7 @@ class _AIItineraryScreenState extends State<AIItineraryScreen> {
                             ),
                             style: ElevatedButton.styleFrom(
                               minimumSize: const Size(90, 45),
-                              backgroundColor: const Color(0xFF467BA1),
+                              backgroundColor: const Color(0xFFF50057),
                               textStyle: const TextStyle(
                                 fontSize: defaultLabelFontSize,
                                 fontWeight: FontWeight.w600,
@@ -541,21 +541,21 @@ class _AIItineraryScreenState extends State<AIItineraryScreen> {
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               width: 2.5,
             ),
           ),
@@ -574,7 +574,7 @@ class _AIItineraryScreenState extends State<AIItineraryScreen> {
           suffixIcon: IconButton(
             icon: const Icon(
               Icons.calendar_today_outlined,
-              color: Color(0xFF467BA1),
+              color: Color(0xFFF50057),
               size: 20,
             ),
             onPressed: () async {
@@ -673,21 +673,21 @@ class _AIItineraryScreenState extends State<AIItineraryScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -722,21 +722,21 @@ class _AIItineraryScreenState extends State<AIItineraryScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -772,21 +772,21 @@ class _AIItineraryScreenState extends State<AIItineraryScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
@@ -818,21 +818,21 @@ class _AIItineraryScreenState extends State<AIItineraryScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Color(0xFF467BA1),
+            color: Color(0xFFF50057),
             width: 2.5,
           ),
         ),
