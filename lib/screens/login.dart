@@ -383,7 +383,7 @@ class _LoginScreenState extends State<LoginScreen> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("images/welcome_background.png"),
+                image: AssetImage("images/welcome_background.jpg"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -391,21 +391,13 @@ class _LoginScreenState extends State<LoginScreen> {
           // White container with opacity
           Container(
             height: double.infinity,
-            color: const Color(0xFFEDF2F6).withOpacity(0.6),
+            // color: const Color(0xFFEDF2F6).withOpacity(0.6),
             padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
             child: SafeArea(
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    // Logo
-                    SizedBox(height: screenHeight * 0.2), // Adjust the top position as needed
-                    Center(
-                      child: Image.asset(
-                        'images/logo.png',
-                        height: screenWidth * 0.3, // Responsive image height
-                      ),
-                    ),
-                    SizedBox(height: screenHeight * 0.03), // Responsive height
+                    SizedBox(height: screenHeight * 0.3), // Responsive height
                     const Center(
                       child: Text(
                         'TripMate',

@@ -188,6 +188,43 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
     }
   }
 
+  Widget buildFeatureButton({
+    required String label,
+    required VoidCallback onPressed,
+    AssetImage? icon,
+    bool isIcon = false,
+  }) {
+    double buttonWidth = MediaQuery.of(context).size.width * 0.22;
+    double iconSize = MediaQuery.of(context).size.width * 0.08;
+
+    return SizedBox(
+      width: buttonWidth,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            side: BorderSide(color: Color(0xFFF50057), width: 1.5),
+          ),
+          padding: EdgeInsets.all(20),
+        ),
+        child: Column(
+          children: [
+            isIcon
+                ? Icon(Icons.translate, size: iconSize, color: Color(0xFFF50057))
+                : Image(image: icon!, width: iconSize, height: iconSize, color: Color(0xFFF50057)),
+            SizedBox(height: 6),
+            Text(
+              label,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 12, color: Color(0xFFF50057)),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -210,158 +247,51 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                 ),
               ),
               SizedBox(height: 10),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal, // Enable horizontal scrolling
-                child: Row(
-                  children: [
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context, 
-                          MaterialPageRoute(builder: (context) => CarRentalHomepageScreen(userId: widget.userId))
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white, // Button background color
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10), // Rounded corners
-                          side: BorderSide(color: Color(0xFFF50057), width: 1.5),
-                        ),
-                        minimumSize: Size(screenWidth * 0.35, screenHeight * 0.1)
-                      ),
-                      child: Column(
-                        children: [
-                          SizedBox(height: 10),
-                          Image(
-                            image: AssetImage("images/car-rental.png"),
-                            width: screenWidth * 0.1,
-                            height: screenWidth * 0.1,
-                            color: Color(0xFFF50057),
-                          ),
-                          SizedBox(height: 10),
-                          Text(
-                            "Car Rental",
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: Color(0xFFF50057),
-                            ),
-                          ),
-                          SizedBox(height: 10),
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 10), // Add spacing between buttons if necessary
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context, 
-                          MaterialPageRoute(builder: (context) => LocalBuddyHomepageScreen(userId: widget.userId))
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          side: BorderSide(color: Color(0xFFF50057), width: 1.5),
-                        ),
-                        minimumSize: Size(screenWidth * 0.35, screenHeight * 0.1)
-                      ),
-                      child: Column(
-                        children: [
-                          SizedBox(height: 10),
-                          Image(
-                            image: AssetImage("images/location.png"),
-                            width: screenWidth * 0.1,
-                            height: screenWidth * 0.1,
-                            color: Color(0xFFF50057),
-                          ),
-                          SizedBox(height: 10),
-                          Text(
-                            "Local Buddy",
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: Color(0xFFF50057),
-                            ),
-                          ),
-                          SizedBox(height: 10),
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 10),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context, 
-                          MaterialPageRoute(builder: (context) => ViewCountryScreen(userId: widget.userId))
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          side: BorderSide(color: Color(0xFFF50057), width: 1.5),
-                        ),
-                        minimumSize: Size(screenWidth * 0.35, screenHeight * 0.1)
-                      ),
-                      child: Column(
-                        children: [
-                          SizedBox(height: 10),
-                          Image(
-                            image: AssetImage("images/tour-guide.png"),
-                            width: screenWidth * 0.1,
-                            height: screenWidth * 0.1,
-                            color: Color(0xFFF50057),
-                          ),
-                          SizedBox(height: 10),
-                          Text(
-                            "Group Tour",
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: Color(0xFFF50057),
-                            ),
-                          ),
-                          SizedBox(height: 10),
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 10),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => LanguageTranslatorScreen(userId: widget.userId))
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          side: BorderSide(color: Color(0xFFF50057), width: 1.5),
-                        ),
-                        minimumSize: Size(screenWidth * 0.35, screenHeight * 0.1)
-                      ),
-                      child: Column(
-                        children: [
-                          SizedBox(height: 10),
-                          Icon(
-                            Icons.translate,
-                            size: screenWidth * 0.1,
-                            color: Color(0xFFF50057),
-                          ),
-                          SizedBox(height: 10),
-                          Text(
-                            "Translator",
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: Color(0xFFF50057),
-                            ),
-                          ),
-                          SizedBox(height: 10),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  buildFeatureButton(
+                    icon: AssetImage("images/car-rental.png"),
+                    label: "Car Rental",
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => CarRentalHomepageScreen(userId: widget.userId)),
+                      );
+                    },
+                  ),
+                  buildFeatureButton(
+                    icon: AssetImage("images/location.png"),
+                    label: "Local Buddy",
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LocalBuddyHomepageScreen(userId: widget.userId)),
+                      );
+                    },
+                  ),
+                  buildFeatureButton(
+                    icon: AssetImage("images/tour-guide.png"),
+                    label: "Group Tour",
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ViewCountryScreen(userId: widget.userId)),
+                      );
+                    },
+                  ),
+                  buildFeatureButton(
+                    icon: null,
+                    label: "Translator",
+                    isIcon: true,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LanguageTranslatorScreen(userId: widget.userId)),
+                      );
+                    },
+                  ),
+                ],
               ),
               SizedBox(height: 20),
               Text(
@@ -375,7 +305,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
 
               // Display loading indicator or country list
               if (isFetchingCountry) 
-                Center(child: CircularProgressIndicator())
+                Center(child: CircularProgressIndicator(color: primaryColor,))
               else if (countryList.isNotEmpty)
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
@@ -485,7 +415,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                               height: screenWidth * 0.45,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
-                                color: Color(0xFFCBE7EA).withOpacity(0.5),
+                                color: const Color.fromARGB(255, 255, 215, 215),
                               ),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -593,7 +523,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                               height: screenWidth * 0.55,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
-                                color: Color(0xFFCBE7EA).withOpacity(0.5),
+                                color: const Color.fromARGB(255, 255, 215, 215),
                                 image: DecorationImage(
                                   image: localBuddy['profileImage'] != null 
                                       ? NetworkImage(localBuddy['profileImage']) 

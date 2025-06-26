@@ -201,15 +201,15 @@ class _CarRentalHomepageScreenState extends State<CarRentalHomepageScreen>{
                     prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                      borderSide: BorderSide(color: primaryColor, width: 2),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                      borderSide: BorderSide(color: primaryColor, width: 2),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+                      borderSide: BorderSide(color: primaryColor, width: 2),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -228,7 +228,7 @@ class _CarRentalHomepageScreenState extends State<CarRentalHomepageScreen>{
           ),
           Expanded(
             child: isLoading
-              ? Center(child: CircularProgressIndicator())
+              ? Center(child: CircularProgressIndicator(color: primaryColor,))
               : _foundedCar.isNotEmpty
                 ? Padding(
                   padding: EdgeInsets.only(left: 10, right: 10, bottom: 10, top: 15),

@@ -1,3 +1,4 @@
+import "package:assignment_tripmate/constants.dart";
 import "package:assignment_tripmate/screens/user/homepage.dart";
 import "package:assignment_tripmate/screens/user/viewCity.dart";
 import "package:assignment_tripmate/utils.dart";
@@ -106,15 +107,15 @@ class _ViewCountryScreenState extends State<ViewCountryScreen> {
                       prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.blueGrey, width: 2), // Set the border color to black
+                        borderSide: BorderSide(color: primaryColor, width: 2), // Set the border color to black
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.blueGrey, width: 2), // Black border when not focused
+                        borderSide: BorderSide(color: primaryColor, width: 2), // Black border when not focused
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Color(0xFFF50057), width: 2), // Black border when focused
+                        borderSide: BorderSide(color: primaryColor, width: 2), // Black border when focused
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),

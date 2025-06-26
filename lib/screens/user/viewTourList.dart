@@ -1,3 +1,4 @@
+import 'package:assignment_tripmate/constants.dart';
 import 'package:assignment_tripmate/screens/user/viewCity.dart';
 import 'package:assignment_tripmate/screens/user/viewTourDetails.dart';
 import 'package:assignment_tripmate/utils.dart';
@@ -133,7 +134,7 @@ class _ViewTourListScreenState extends State<ViewTourListScreen> {
         children: [
           if (_isLoadingCityImage) // Show loader while fetching the city image
             const Center(
-              child: CircularProgressIndicator(),
+              child: CircularProgressIndicator(color: primaryColor,),
             )
           else if (cityData?['cityImage'] != null) ...[
             Container(
@@ -159,15 +160,15 @@ class _ViewTourListScreenState extends State<ViewTourListScreen> {
                       prefixIcon: Icon(Icons.search, color: Colors.grey.shade500, size: 20,),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: Colors.blueGrey, width: 2),
+                        borderSide: const BorderSide(color: primaryColor, width: 2),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: Colors.blueGrey, width: 2),
+                        borderSide: const BorderSide(color: primaryColor, width: 2),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: Color(0xFFF50057), width: 2),
+                        borderSide: const BorderSide(color: primaryColor, width: 2),
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -205,7 +206,7 @@ class _ViewTourListScreenState extends State<ViewTourListScreen> {
           ],
           _isLoadingTourList // Show loader while fetching the tour list
           ? const Center(
-              child: CircularProgressIndicator(),
+              child: CircularProgressIndicator(color: primaryColor,),
             )
           : hasPackage
           ? Container(

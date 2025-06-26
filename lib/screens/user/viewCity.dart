@@ -1,3 +1,4 @@
+import "package:assignment_tripmate/constants.dart";
 import "package:assignment_tripmate/screens/user/viewCountry.dart";
 import "package:assignment_tripmate/screens/user/viewTourList.dart";
 import "package:assignment_tripmate/utils.dart";
@@ -110,15 +111,15 @@ class _ViewCityScreenState extends State<ViewCityScreen> {
                       prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.blueGrey, width: 2), // Set the border color to black
+                        borderSide: BorderSide(color: primaryColor, width: 2), // Set the border color to black
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.blueGrey, width: 2), // Black border when not focused
+                        borderSide: BorderSide(color: primaryColor, width: 2), // Black border when not focused
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Color(0xFFF50057), width: 2), // Black border when focused
+                        borderSide: BorderSide(color: primaryColor, width: 2), // Black border when focused
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -138,7 +139,7 @@ class _ViewCityScreenState extends State<ViewCityScreen> {
           ),
 
           isLoading
-          ? Center(child: CircularProgressIndicator())  // Show loading indicator while fetching data
+          ? Center(child: CircularProgressIndicator(color: primaryColor,))  // Show loading indicator while fetching data
           : hasCity
           ? Container(
               padding: EdgeInsets.only(right: 10, left: 10, top: 85),

@@ -1648,7 +1648,7 @@ class _createBookingScreenState extends State<createBookingScreen> {
                           Container(
                             padding: EdgeInsets.all(10.0),
                             decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 236, 250, 255),
+                              color: Color.fromARGB(255, 255, 215, 215),
                               border: Border.all(color: primaryColor, width: 1.5),
                               borderRadius: BorderRadius.circular(10)
                             ),
@@ -2071,7 +2071,7 @@ class _createBookingScreenState extends State<createBookingScreen> {
                             Container(
                               padding: EdgeInsets.all(10.0),
                               decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 236, 250, 255),
+                                color: Color.fromARGB(255, 255, 215, 215),
                                 border: Border.all(color: primaryColor, width: 1.5),
                                 borderRadius: BorderRadius.circular(10)
                               ),
@@ -2486,7 +2486,7 @@ class _createBookingScreenState extends State<createBookingScreen> {
                               Container(
                                 padding: EdgeInsets.all(10.0),
                                 decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 236, 250, 255),
+                                  color: Color.fromARGB(255, 255, 215, 215),
                                   border: Border.all(color: primaryColor, width: 1.5),
                                   borderRadius: BorderRadius.circular(10)
                                 ),

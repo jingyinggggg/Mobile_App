@@ -1,3 +1,4 @@
+import 'package:assignment_tripmate/constants.dart';
 import 'package:assignment_tripmate/screens/user/itineraryAI.dart';
 import 'package:assignment_tripmate/screens/user/viewAIItinerary.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -132,11 +133,11 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
                             prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                              borderSide: BorderSide(color: primaryColor, width: 2),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                              borderSide: BorderSide(color: primaryColor, width: 2),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),

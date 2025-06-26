@@ -217,15 +217,15 @@ class _LocalBuddyHomepageScreenState extends State<LocalBuddyHomepageScreen> {
                   prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                    borderSide: BorderSide(color: primaryColor, width: 2),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                    borderSide: BorderSide(color: primaryColor, width: 2),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+                    borderSide: BorderSide(color: primaryColor, width: 2),
                   ),
                   errorBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),

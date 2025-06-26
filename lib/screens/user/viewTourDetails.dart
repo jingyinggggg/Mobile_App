@@ -339,7 +339,7 @@ class _ViewTourDetailsScreenState extends State<ViewTourDetailsScreen> with Widg
         ),
       ),
       body: isLoading
-          ? Center(child: CircularProgressIndicator()) // Show a loading indicator while data is being fetched
+          ? Center(child: CircularProgressIndicator(color: primaryColor,)) // Show a loading indicator while data is being fetched
           : SingleChildScrollView(
             child: Column(
               children: [
