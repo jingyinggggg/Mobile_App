@@ -441,7 +441,7 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
                       Container(
                         width: double.infinity, // Set the width to take up all available space
                         child: Table(
-                          border: TableBorder.all(color: primaryColor, width: 2.5, borderRadius: BorderRadius.circular(10)),
+                          border: TableBorder.all(color: primaryColor, width: 1.5, borderRadius: BorderRadius.circular(10)),
                           columnWidths: {
                             0: FlexColumnWidth(), // Make column take proportional width
                           },
@@ -560,21 +560,21 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -609,21 +609,21 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -658,21 +658,21 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -727,21 +727,21 @@ class _AdminManageUserDetailsScreenState extends State<AdminManageUserDetailsScr
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
               color: Color(0xFFF50057),
-              width: 2.5,
+              width: 1.5,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
               color: Color(0xFFF50057),
-              width: 2.5,
+              width: 1.5,
             ),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
               color: Color(0xFFF50057),
-              width: 2.5,
+              width: 1.5,
             ),
           ),
           floatingLabelBehavior: FloatingLabelBehavior.always,

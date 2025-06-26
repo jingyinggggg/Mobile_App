@@ -335,7 +335,7 @@ class _LocalBuddyEditInfoScreenState extends State<LocalBuddyEditInfoScreen> {
           ),
           SizedBox(height: 10),
           Table(
-            border: TableBorder.all(color: primaryColor, width: 2.5, borderRadius: BorderRadius.circular(10)),
+            border: TableBorder.all(color: primaryColor, width: 1.5, borderRadius: BorderRadius.circular(10)),
             columnWidths: {
               0: FixedColumnWidth(130), // Fixed width for days
             },
@@ -421,21 +421,21 @@ class _LocalBuddyEditInfoScreenState extends State<LocalBuddyEditInfoScreen> {
           //       borderRadius: BorderRadius.circular(10),
           //       borderSide: const BorderSide(
           //         color: Color(0xFFF50057),
-          //         width: 2.5,
+          //         width: 1.5,
           //       ),
           //     ),
           //     focusedBorder: OutlineInputBorder(
           //       borderRadius: BorderRadius.circular(10),
           //       borderSide: const BorderSide(
           //         color: Color(0xFFF50057),
-          //         width: 2.5,
+          //         width: 1.5,
           //       ),
           //     ),
           //     enabledBorder: OutlineInputBorder(
           //       borderRadius: BorderRadius.circular(10),
           //       borderSide: const BorderSide(
           //         color: Color(0xFFF50057),
-          //         width: 2.5,
+          //         width: 1.5,
           //       ),
           //     ),
           //     floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -513,21 +513,21 @@ class _LocalBuddyEditInfoScreenState extends State<LocalBuddyEditInfoScreen> {
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.always,

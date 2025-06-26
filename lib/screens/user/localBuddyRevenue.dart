@@ -295,17 +295,17 @@ class _LocalBuddyRevenueScreenState extends State<LocalBuddyRevenueScreen> {
                       border: OutlineInputBorder(
                         borderSide: const BorderSide(
                           color: Color(0xFFF50057),
-                          width: 2.5,
+                          width: 1.5,
                         ),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(
                           color: Color(0xFFF50057),
-                          width: 2.5,
+                          width: 1.5,
                         ),
                       ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
+                        borderSide: const BorderSide(color: Color(0xFFF50057), width: 1.5),
                       ),
                       floatingLabelBehavior: FloatingLabelBehavior.always,
                     ),
@@ -323,17 +323,17 @@ class _LocalBuddyRevenueScreenState extends State<LocalBuddyRevenueScreen> {
                       border: OutlineInputBorder(
                         borderSide: const BorderSide(
                           color: Color(0xFFF50057),
-                          width: 2.5,
+                          width: 1.5,
                         ),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(
                           color: Color(0xFFF50057),
-                          width: 2.5,
+                          width: 1.5,
                         ),
                       ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
+                        borderSide: const BorderSide(color: Color(0xFFF50057), width: 1.5),
                       ),
                       floatingLabelBehavior: FloatingLabelBehavior.always,
                     ),
@@ -351,17 +351,17 @@ class _LocalBuddyRevenueScreenState extends State<LocalBuddyRevenueScreen> {
                       border: OutlineInputBorder(
                         borderSide: const BorderSide(
                           color: Color(0xFFF50057),
-                          width: 2.5,
+                          width: 1.5,
                         ),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(
                           color: Color(0xFFF50057),
-                          width: 2.5,
+                          width: 1.5,
                         ),
                       ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
+                        borderSide: const BorderSide(color: Color(0xFFF50057), width: 1.5),
                       ),
                       floatingLabelBehavior: FloatingLabelBehavior.always,
                     ),

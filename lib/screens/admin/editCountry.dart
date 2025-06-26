@@ -170,7 +170,7 @@ class _AdminEditCountryScreenState extends State<AdminEditCountryScreen> {
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
       ),
@@ -195,7 +195,7 @@ class _AdminEditCountryScreenState extends State<AdminEditCountryScreen> {
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         suffixIcon: IconButton(

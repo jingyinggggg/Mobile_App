@@ -1062,17 +1062,17 @@ class _createBookingScreenState extends State<createBookingScreen> {
                           border: OutlineInputBorder(
                             borderSide: const BorderSide(
                               color: Color(0xFFF50057),
-                              width: 2.5,
+                              width: 1.5,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: const BorderSide(
                               color: Color(0xFFF50057),
-                              width: 2.5,
+                              width: 1.5,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
+                            borderSide: const BorderSide(color: Color(0xFFF50057), width: 1.5),
                           ),
                           floatingLabelBehavior: FloatingLabelBehavior.always,
                         ),
@@ -1095,17 +1095,17 @@ class _createBookingScreenState extends State<createBookingScreen> {
                           border: OutlineInputBorder(
                             borderSide: const BorderSide(
                               color: Color(0xFFF50057),
-                              width: 2.5,
+                              width: 1.5,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: const BorderSide(
                               color: Color(0xFFF50057),
-                              width: 2.5,
+                              width: 1.5,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
+                            borderSide: const BorderSide(color: Color(0xFFF50057), width: 1.5),
                           ),
                           floatingLabelBehavior: FloatingLabelBehavior.always,
                         ),
@@ -1128,17 +1128,17 @@ class _createBookingScreenState extends State<createBookingScreen> {
                           border: OutlineInputBorder(
                             borderSide: const BorderSide(
                               color: Color(0xFFF50057),
-                              width: 2.5,
+                              width: 1.5,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: const BorderSide(
                               color: Color(0xFFF50057),
-                              width: 2.5,
+                              width: 1.5,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Color(0xFFF50057), width: 2.5),
+                            borderSide: const BorderSide(color: Color(0xFFF50057), width: 1.5),
                           ),
                           floatingLabelBehavior: FloatingLabelBehavior.always,
                         ),
@@ -1561,21 +1561,21 @@ class _createBookingScreenState extends State<createBookingScreen> {
                                 borderRadius: BorderRadius.circular(10),
                                 borderSide: const BorderSide(
                                   color: Color(0xFFF50057),
-                                  width: 2.5,
+                                  width: 1.5,
                                 ),
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
                                 borderSide: const BorderSide(
                                   color: Color(0xFFF50057),
-                                  width: 2.5,
+                                  width: 1.5,
                                 ),
                               ),
                               enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
                                 borderSide: const BorderSide(
                                   color: Color(0xFFF50057),
-                                  width: 2.5,
+                                  width: 1.5,
                                 ),
                               ),
                               floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -1649,7 +1649,7 @@ class _createBookingScreenState extends State<createBookingScreen> {
                             padding: EdgeInsets.all(10.0),
                             decoration: BoxDecoration(
                               color: Color.fromARGB(255, 236, 250, 255),
-                              border: Border.all(color: primaryColor, width: 2.5),
+                              border: Border.all(color: primaryColor, width: 1.5),
                               borderRadius: BorderRadius.circular(10)
                             ),
                             child: Column(
@@ -2072,7 +2072,7 @@ class _createBookingScreenState extends State<createBookingScreen> {
                               padding: EdgeInsets.all(10.0),
                               decoration: BoxDecoration(
                                 color: Color.fromARGB(255, 236, 250, 255),
-                                border: Border.all(color: primaryColor, width: 2.5),
+                                border: Border.all(color: primaryColor, width: 1.5),
                                 borderRadius: BorderRadius.circular(10)
                               ),
                               child: Column(
@@ -2487,7 +2487,7 @@ class _createBookingScreenState extends State<createBookingScreen> {
                                 padding: EdgeInsets.all(10.0),
                                 decoration: BoxDecoration(
                                   color: Color.fromARGB(255, 236, 250, 255),
-                                  border: Border.all(color: primaryColor, width: 2.5),
+                                  border: Border.all(color: primaryColor, width: 1.5),
                                   borderRadius: BorderRadius.circular(10)
                                 ),
                                 child: Column(
@@ -2886,21 +2886,21 @@ class _createBookingScreenState extends State<createBookingScreen> {
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
             color: Color(0xFFF50057),
-            width: 2.5,
+            width: 1.5,
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -2947,7 +2947,7 @@ class _createBookingScreenState extends State<createBookingScreen> {
     return Container(
       padding: EdgeInsets.all(10.0),
       decoration: BoxDecoration(
-        border: Border.all(color: primaryColor, width: 2.5),
+        border: Border.all(color: primaryColor, width: 1.5),
         borderRadius: BorderRadius.circular(10)
       ),
       child: Row(
@@ -3293,21 +3293,21 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
         borderRadius: BorderRadius.circular(10),
         borderSide: const BorderSide(
           color: Color(0xFFF50057),
-          width: 2.5,
+          width: 1.5,
         ),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10),
         borderSide: const BorderSide(
           color: Color(0xFFF50057),
-          width: 2.5,
+          width: 1.5,
         ),
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10),
         borderSide: const BorderSide(
           color: Color(0xFFF50057),
-          width: 2.5,
+          width: 1.5,
         ),
       ),
       floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -3409,21 +3409,21 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
   //           borderRadius: BorderRadius.circular(10),
   //           borderSide: const BorderSide(
   //             color: Color(0xFFF50057),
-  //             width: 2.5,
+  //             width: 1.5,
   //           ),
   //         ),
   //         focusedBorder: OutlineInputBorder(
   //           borderRadius: BorderRadius.circular(10),
   //           borderSide: const BorderSide(
   //             color: Color(0xFFF50057),
-  //             width: 2.5,
+  //             width: 1.5,
   //           ),
   //         ),
   //         enabledBorder: OutlineInputBorder(
   //           borderRadius: BorderRadius.circular(10),
   //           borderSide: const BorderSide(
   //             color: Color(0xFFF50057),
-  //             width: 2.5,
+  //             width: 1.5,
   //           ),
   //         ),
   //         floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -3613,7 +3613,7 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
     return Container(
       padding: EdgeInsets.all(10.0),
       decoration: BoxDecoration(
-        border: Border.all(color: primaryColor, width: 2.5),
+        border: Border.all(color: primaryColor, width: 1.5),
         borderRadius: BorderRadius.circular(10)
       ),
       child: Row(
@@ -3831,21 +3831,21 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
               color: Color(0xFFF50057),
-              width: 2.5,
+              width: 1.5,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
               color: Color(0xFFF50057),
-              width: 2.5,
+              width: 1.5,
             ),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(
               color: Color(0xFFF50057),
-              width: 2.5,
+              width: 1.5,
             ),
           ),
           floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -3968,21 +3968,21 @@ DateTime _findNextSelectableDate(DateTime date, bool Function(DateTime) predicat
   //             borderRadius: BorderRadius.circular(10),
   //             borderSide: const BorderSide(
   //               color: Color(0xFFF50057),
-  //               width: 2.5,
+  //               width: 1.5,
   //             ),
   //           ),
   //           focusedBorder: OutlineInputBorder(
   //             borderRadius: BorderRadius.circular(10),
   //             borderSide: const BorderSide(
   //               color: Color(0xFFF50057),
-  //               width: 2.5,
+  //               width: 1.5,
   //             ),
   //           ),
   //           enabledBorder: OutlineInputBorder(
   //             borderRadius: BorderRadius.circular(10),
   //             borderSide: const BorderSide(
   //               color: Color(0xFFF50057),
-  //               width: 2.5,
+  //               width: 1.5,
   //             ),
   //           ),
   //           floatingLabelBehavior: FloatingLabelBehavior.always,
