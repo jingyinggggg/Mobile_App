@@ -279,7 +279,7 @@ class _LocalBuddyViewAppointmentScreenState
                   color: bgColor,
                   borderRadius: BorderRadius.circular(8),
                   border: isSelected
-                      ? Border.all(color: primaryColor, width: 2)
+                      ? Border.all(color: primaryColor, width: 1.5)
                       : null,
                 ),
                 child: Center(

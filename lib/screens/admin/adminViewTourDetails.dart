@@ -117,31 +117,45 @@ class _AdminTourPackageDetailsScreenState extends State<AdminTourPackageDetailsS
     return Scaffold(
       backgroundColor: Colors.white,
       resizeToAvoidBottomInset: true,
-      appBar: AppBar(
-        title: const Text("Group Tour"),
-        centerTitle: true,
-        backgroundColor: const Color(0xFFE57373),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-          fontFamily: 'Inika',
-          fontWeight: FontWeight.bold,
-          fontSize: 20,
-        ),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-          onPressed: () {
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)], // Soft pink gradient
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+          child: AppBar(
+            title: const Text("Group Tour"),
+            centerTitle: true,
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            titleTextStyle: const TextStyle(
+              color: Colors.black,
+              fontFamily: 'Inika',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
+              onPressed: () {
+                
             Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => AdminViewTourListScreen(
-                  userId: widget.userId,
-                  countryName: widget.countryName,
-                  cityName: widget.cityName,
-                  countryId: widget.countryId,
-                ),
-              ),
+              context, 
+                  MaterialPageRoute(
+                    builder: (context) => AdminViewTourListScreen(
+                      userId: widget.userId,
+                      countryName: widget.countryName,
+                      cityName: widget.cityName,
+                      countryId: widget.countryId,
+                    ),
+                  ),
             );
-          },
+              },
+            ),
+          ),
         ),
       ),
       body: isLoading

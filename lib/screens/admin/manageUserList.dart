@@ -233,33 +233,36 @@ class _AdminManageUserListScreenState extends State<AdminManageUserListScreen> {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color.fromARGB(255, 236, 236, 236),
         appBar: AppBar(
-          title: Text("User List"),
+          title: const Text("User List"),
           centerTitle: true,
-          backgroundColor: const Color(0xFFE57373),
+          backgroundColor: Colors.transparent, // Allow gradient to be visible
+          elevation: 0,
           titleTextStyle: const TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontFamily: 'Inika',
             fontWeight: FontWeight.bold,
-            fontSize: defaultAppBarTitleFontSize,
+            fontSize: 20,
           ),
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
+            icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => AdminHomepageScreen(userId: widget.userId)),
+                MaterialPageRoute(
+                  builder: (context) => AdminHomepageScreen(userId: widget.userId),
+                ),
               );
             },
           ),
           bottom: PreferredSize(
-            preferredSize: Size.fromHeight(50.0),
+            preferredSize: const Size.fromHeight(50.0),
             child: Container(
               height: 50,
               color: Colors.white,
               child: TabBar(
-                tabs: [
+                tabs: const [
                   Tab(child: Text("User")),
                   Tab(child: Text("Travel Agent")),
                   Tab(child: Text("Local Buddy")),
@@ -275,6 +278,15 @@ class _AdminManageUserListScreenState extends State<AdminManageUserListScreen> {
               ),
             ),
           ),
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
+          ),
         ),
         body: TabBarView(
           children: [
@@ -283,7 +295,8 @@ class _AdminManageUserListScreenState extends State<AdminManageUserListScreen> {
             _buildUserListTab(foundedLocalBuddyList, _searchLocalBuddy, "lb"),
           ],
         ),
-      ),
+      )
+
     );
   }
 
@@ -303,19 +316,19 @@ class _AdminManageUserListScreenState extends State<AdminManageUserListScreen> {
             prefixIcon: Icon(Icons.search, color: Colors.grey.shade500, size: 20),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: const BorderSide(color: Colors.blueGrey, width: 2),
+              borderSide: const BorderSide(color: Color(0xFFF50057), width: 1.5),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: const BorderSide(color: Colors.blueGrey, width: 2),
+              borderSide: const BorderSide(color: Color(0xFFF50057), width: 1.5),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: const BorderSide(color: Color(0xFFF50057), width: 2),
+              borderSide: const BorderSide(color: Color(0xFFF50057), width: 1.5),
             ),
             errorBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: const BorderSide(color: Colors.red, width: 2),
+              borderSide: const BorderSide(color: Colors.red, width: 1.5),
             ),
             hintText: type == "user" ? "Search user with name..." : type == "ta" ? "Search travel agent with name..." : "Search local buddy with name...",
             hintStyle: TextStyle(

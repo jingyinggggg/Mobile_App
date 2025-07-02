@@ -308,65 +308,68 @@ class _AdminViewAnalyticsMainpageScreenState extends State<AdminViewAnalyticsMai
     return DefaultTabController(
       length: 2, 
       child: Scaffold(
-        backgroundColor: Color.fromARGB(255, 241, 246, 249),
+        backgroundColor: Color.fromARGB(255, 236, 236, 236),
         resizeToAvoidBottomInset: true,
         appBar: AppBar(
           title: const Text("Analytics"),
           centerTitle: true,
-          backgroundColor: const Color(0xFFE57373),
+          backgroundColor: Colors.transparent, // Show gradient instead
+          elevation: 0,
           titleTextStyle: const TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontFamily: 'Inika',
             fontWeight: FontWeight.bold,
             fontSize: defaultAppBarTitleFontSize,
           ),
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
+            icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => AdminHomepageScreen(userId: widget.userId))
+                MaterialPageRoute(builder: (context) => AdminHomepageScreen(userId: widget.userId)),
               );
             },
           ),
           actions: [
             Theme(
               data: Theme.of(context).copyWith(
-                canvasColor: Colors.black,
-                textTheme: TextTheme(
-                  titleMedium: TextStyle(color: Colors.white),
+                canvasColor: Colors.white,
+                textTheme: const TextTheme(
+                  titleMedium: TextStyle(color: Colors.black),
                 ),
               ),
               child: DropdownButton<int>(
                 value: selectedYear,
                 items: List.generate(2, (index) {
                   int year = DateTime.now().year + index;
-                  return DropdownMenuItem(value: year, child: Text(year.toString(), style: TextStyle(color: Colors.white)));
+                  return DropdownMenuItem(
+                    value: year,
+                    child: Text(
+                      year.toString(),
+                      style: const TextStyle(color: Colors.black),
+                    ),
+                  );
                 }),
                 onChanged: _onYearChanged,
-                underline: Container(), // Remove underline if preferred
-                iconEnabledColor: Colors.white,
+                underline: Container(),
+                iconEnabledColor: Colors.black,
               ),
             ),
           ],
           bottom: PreferredSize(
-            preferredSize: Size.fromHeight(50.0),
+            preferredSize: const Size.fromHeight(50.0),
             child: Container(
               height: 50,
               color: Colors.white,
               child: TabBar(
-                tabs: [
-                  Tab(
-                    child: Text("Agency"),
-                  ),
-                  Tab(
-                    child: Text("Local Buddy"),
-                  )
+                tabs: const [
+                  Tab(child: Text("Agency")),
+                  Tab(child: Text("Local Buddy")),
                 ],
                 labelColor: primaryColor,
                 indicatorColor: primaryColor,
                 indicatorWeight: 2,
-                unselectedLabelColor: Color(0xFFA4B4C0), // Unselected tab text color
+                unselectedLabelColor: Color(0xFFA4B4C0),
                 indicatorPadding: EdgeInsets.zero,
                 indicatorSize: TabBarIndicatorSize.tab,
                 unselectedLabelStyle: TextStyle(fontSize: defaultFontSize),
@@ -374,7 +377,17 @@ class _AdminViewAnalyticsMainpageScreenState extends State<AdminViewAnalyticsMai
               ),
             ),
           ),
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
+          ),
         ),
+
         body: isFetchingLocalBuddyBooking || isFetchingLocalBuddyList || isFetchingAgencyList
         ? Center(child: CircularProgressIndicator(color: primaryColor))
         : TabBarView(
@@ -398,11 +411,11 @@ class _AdminViewAnalyticsMainpageScreenState extends State<AdminViewAnalyticsMai
                         prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                          borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                          borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
@@ -461,11 +474,11 @@ class _AdminViewAnalyticsMainpageScreenState extends State<AdminViewAnalyticsMai
                           prefixIcon: Icon(Icons.search, color: Colors.grey.shade500, size: 15),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),

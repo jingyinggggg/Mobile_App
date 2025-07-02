@@ -109,7 +109,7 @@ class _TravelAgentHomepageScreenState extends State<TravelAgentHomepageScreen> {
                   padding: const EdgeInsets.all(10.0), // Internal padding inside the container
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 228, 243, 255),
-                    border: Border.all(color: primaryColor, width: 2.0),
+                    border: Border.all(color: primaryColor, width: 1.5),
                   ),
                   child: Text(
                     "Note:\n"

@@ -201,7 +201,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               child: Container(
                                 padding: EdgeInsets.only(right: 5),
                                 decoration: BoxDecoration(
-                                  border: Border(right: BorderSide(color: Color(0xFFF50057), width: 2))
+                                  border: Border(right: BorderSide(color: Color(0xFFF50057), width: 1.5))
                                 ),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,

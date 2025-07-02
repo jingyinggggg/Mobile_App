@@ -392,49 +392,58 @@ class _AdminViewAnalyticsChartScreenState extends State<AdminViewAnalyticsChartS
         appBar: AppBar(
           title: const Text("Analytics"),
           centerTitle: true,
-          backgroundColor: const Color(0xFFE57373),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
           titleTextStyle: const TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontFamily: 'Inika',
             fontWeight: FontWeight.bold,
-            fontSize: defaultAppBarTitleFontSize,
+            fontSize: 20,
           ),
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
+            icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => AdminViewAnalyticsMainpageScreen(userId: widget.userId)),
+                MaterialPageRoute(
+                  builder: (context) => AdminViewAnalyticsMainpageScreen(userId: widget.userId),
+                ),
               );
             },
           ),
           actions: [
             Theme(
               data: Theme.of(context).copyWith(
-                canvasColor: Colors.black,
-                textTheme: TextTheme(
-                  titleMedium: TextStyle(color: Colors.white),
+                canvasColor: Colors.white,
+                textTheme: const TextTheme(
+                  titleMedium: TextStyle(color: Colors.black),
                 ),
               ),
               child: DropdownButton<int>(
                 value: selectedYear,
                 items: List.generate(2, (index) {
                   int year = DateTime.now().year + index;
-                  return DropdownMenuItem(value: year, child: Text(year.toString(), style: TextStyle(color: Colors.white)));
+                  return DropdownMenuItem(
+                    value: year,
+                    child: Text(
+                      year.toString(),
+                      style: const TextStyle(color: Colors.black),
+                    ),
+                  );
                 }),
                 onChanged: _onYearChanged,
-                underline: Container(), // Remove underline if preferred
-                iconEnabledColor: Colors.white,
+                underline: Container(),
+                iconEnabledColor: Colors.black,
               ),
             ),
           ],
           bottom: PreferredSize(
-            preferredSize: Size.fromHeight(50.0),
+            preferredSize: const Size.fromHeight(50.0),
             child: Container(
               height: 50,
               color: Colors.white,
               child: TabBar(
-                tabs: [
+                tabs: const [
                   Tab(child: Text("Tour Package")),
                   Tab(child: Text("Car Rental")),
                 ],
@@ -449,7 +458,17 @@ class _AdminViewAnalyticsChartScreenState extends State<AdminViewAnalyticsChartS
               ),
             ),
           ),
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
+          ),
         ),
+
         body: isFetchingTour || isFetchingCarRental || isFetchingTourList || isFetchingCarRentalList
         ? const Center(child: CircularProgressIndicator(color: primaryColor,))
         : TabBarView(

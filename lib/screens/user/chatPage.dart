@@ -186,19 +186,19 @@ class _ChatScreenState extends State<ChatScreen> with AutomaticKeepAliveClientMi
                       prefixIcon: Icon(Icons.search, color: Colors.grey.shade500, size: 20,),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Color(0xFFF50057), width: 2), 
+                        borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5), 
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Color(0xFFF50057), width: 2), 
+                        borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5), 
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Color(0xFFF50057), width: 2), 
+                        borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5), 
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.red, width: 2), 
+                        borderSide: BorderSide(color: Colors.red, width: 1.5), 
                       ),
                       hintText: "Search chat...",
                       hintStyle: TextStyle(

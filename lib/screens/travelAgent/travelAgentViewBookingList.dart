@@ -151,49 +151,43 @@ class _TravelAgentViewBookingListScreenState extends State<TravelAgentViewBookin
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        backgroundColor: Color.fromARGB(255, 241, 246, 249),
+        backgroundColor: Color.fromARGB(255, 236, 236, 236),
         resizeToAvoidBottomInset: true,
-        appBar: AppBar(
-          title: const Text("Booking"),
-          centerTitle: true,
-          backgroundColor: const Color(0xFFE57373),
-          titleTextStyle: const TextStyle(
-            color: Colors.white,
-            fontFamily: 'Inika',
-            fontWeight: FontWeight.bold,
-            fontSize: defaultAppBarTitleFontSize,
-          ),
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-            onPressed: () {
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(kToolbarHeight),
+          child: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)], // Soft pink gradient
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
+            child: AppBar(
+              title: const Text("Booking"),
+              centerTitle: true,
+              backgroundColor: Colors.transparent, // Makes the gradient visible
+              elevation: 0,
+              titleTextStyle: const TextStyle(
+                color: Colors.black,
+                fontFamily: 'Inika',
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+              leading: IconButton(
+                icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
+                onPressed: () {
+                  
               Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => TravelAgentHomepageScreen(userId: widget.userId)),
+                context, 
+                  MaterialPageRoute(builder: (context) => TravelAgentHomepageScreen(userId: widget.userId)),
               );
-            },
-          ),
-          bottom: PreferredSize(
-            preferredSize: Size.fromHeight(50.0),
-            child: Container(
-              height: 50,
-              color: Colors.white,
-              child: TabBar(
-                tabs: [
-                  Tab(child: Text("Tour Package")),
-                  Tab(child: Text("Car Rental")),
-                ],
-                labelColor: primaryColor,
-                indicatorColor: primaryColor,
-                indicatorWeight: 2,
-                unselectedLabelColor: Color(0xFFA4B4C0),
-                indicatorPadding: EdgeInsets.zero,
-                indicatorSize: TabBarIndicatorSize.tab,
-                unselectedLabelStyle: TextStyle(fontSize: defaultFontSize),
-                labelStyle: TextStyle(fontSize: defaultFontSize),
+                },
               ),
             ),
           ),
         ),
+        
         body: TabBarView(
           children: [
             Container(
@@ -215,19 +209,19 @@ class _TravelAgentViewBookingListScreenState extends State<TravelAgentViewBookin
                                   prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                                    borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                                   ),
                                   enabledBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                                    borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                                   ),
                                   focusedBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+                                    borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                                   ),
                                   errorBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.red, width: 2),
+                                    borderSide: BorderSide(color: Colors.red, width: 1.5),
                                   ),
                                   hintText: "Search tour name...",
                                   hintStyle: TextStyle(
@@ -269,19 +263,19 @@ class _TravelAgentViewBookingListScreenState extends State<TravelAgentViewBookin
                                   prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                                    borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                                   ),
                                   enabledBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                                    borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                                   ),
                                   focusedBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+                                    borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                                   ),
                                   errorBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.red, width: 2),
+                                    borderSide: BorderSide(color: Colors.red, width: 1.5),
                                   ),
                                   hintText: "Search car model...",
                                   hintStyle: TextStyle(

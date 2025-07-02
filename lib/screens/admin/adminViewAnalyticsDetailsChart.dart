@@ -1,4 +1,4 @@
-import 'package:assignment_tripmate/constants.dart';
+ import 'package:assignment_tripmate/constants.dart';
 import 'package:assignment_tripmate/screens/admin/adminViewAnalyticsChart.dart';
 import 'package:assignment_tripmate/screens/admin/adminViewAnalyticsMainpage.dart';
 import 'package:fl_chart/fl_chart.dart';
@@ -255,42 +255,56 @@ class _AdminViewAnalyticsChartDetailScreenState extends State<AdminViewAnalytics
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color.fromARGB(255, 236, 236, 236),
       resizeToAvoidBottomInset: true,
-      appBar: AppBar(
-        title: const Text("Analytics"),
-        centerTitle: true,
-        backgroundColor: const Color(0xFFE57373),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-          fontFamily: 'Inika',
-          fontWeight: FontWeight.bold,
-          fontSize: defaultAppBarTitleFontSize,
-        ),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-          onPressed: () {
-            if (widget.localBuddyID != null) {
-              // Navigate to the main page if localBuddyID is not null
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => AdminViewAnalyticsMainpageScreen(userId: widget.userId),
-                ),
-              );
-            } else if (widget.agencyID != null) {
-              // Navigate to the chart screen if agencyID is not null
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => AdminViewAnalyticsChartScreen(userId: widget.userId, agencyId: widget.agencyID!),
-                ),
-              );
-            } else {
-              // Show the error dialog if agencyID is null
-              _showErrorDialog(context);
-            }
-          },
+      
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)], // Soft pink gradient
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+          child: AppBar(
+            title: const Text("Analytics"),
+            centerTitle: true,
+            backgroundColor: Colors.transparent, // Makes the gradient visible
+            elevation: 0,
+            titleTextStyle: const TextStyle(
+              color: Colors.black,
+              fontFamily: 'Inika',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
+              onPressed: () {
+                if (widget.localBuddyID != null) {
+                  // Navigate to the main page if localBuddyID is not null
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AdminViewAnalyticsMainpageScreen(userId: widget.userId),
+                    ),
+                  );
+                } else if (widget.agencyID != null) {
+                  // Navigate to the chart screen if agencyID is not null
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AdminViewAnalyticsChartScreen(userId: widget.userId, agencyId: widget.agencyID!),
+                    ),
+                  );
+                } else {
+                  // Show the error dialog if agencyID is null
+                  _showErrorDialog(context);
+                }
+              },
+            ),
+          ),
         ),
       ),
       body: widget.tourID != null || widget.carID != null || widget.localBuddyID != null
