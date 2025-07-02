@@ -165,9 +165,20 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
             Navigator.push(
               context, 
               MaterialPageRoute(builder: (context) => TravelAgentViewCityScreen(userId: widget.userId, countryName: widget.countryName,))
-            );
+                );
               },
             ),
+            actions: <Widget>[
+              IconButton(
+                icon: const Icon(Icons.add, color: Colors.black, size: 30,),
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => TravelAgentAddTourPackageScreen(userId: widget.userId, countryName: widget.countryName, cityName: widget.cityName,))
+                  );
+                },
+              ),
+            ],
           ),
         ),
       ),
@@ -189,19 +200,19 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
                   prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+                    borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+                    borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+                    borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                   ),
                   errorBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Colors.red, width: 2),
+                    borderSide: BorderSide(color: Colors.red, width: 1.5),
                   ),
                   hintText: "Search tour package ...",
                   hintStyle: TextStyle(
@@ -316,7 +327,7 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
                     Row(
                       children: [
                         Container(
-                          width: 25,
+                          width: 1.55,
                           child: IconButton(
                             icon: isPublished ? Icon(Icons.check_circle_rounded) : Icon(Icons.not_interested_rounded),
                             color: isPublished ? Colors.green : Colors.grey.shade500,
@@ -328,7 +339,7 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
                         ),
                         SizedBox(width: 10),
                         Container(
-                          width: 25,
+                          width: 1.55,
                           child: IconButton(
                             onPressed: (){
                               Navigator.push(
@@ -411,19 +422,19 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
   //                   prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
   //                   border: OutlineInputBorder(
   //                     borderRadius: BorderRadius.circular(10),
-  //                     borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+  //                     borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
   //                   ),
   //                   enabledBorder: OutlineInputBorder(
   //                     borderRadius: BorderRadius.circular(10),
-  //                     borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+  //                     borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
   //                   ),
   //                   focusedBorder: OutlineInputBorder(
   //                     borderRadius: BorderRadius.circular(10),
-  //                     borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+  //                     borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
   //                   ),
   //                   errorBorder: OutlineInputBorder(
   //                     borderRadius: BorderRadius.circular(10),
-  //                     borderSide: BorderSide(color: Colors.red, width: 2),
+  //                     borderSide: BorderSide(color: Colors.red, width: 1.5),
   //                   ),
   //                   hintText: "Search tour package ...",
   //                   hintStyle: TextStyle(

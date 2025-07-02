@@ -110,19 +110,19 @@ class _ViewCityScreenState extends State<ViewCityScreen> {
                       prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.blueGrey, width: 2), // Set the border color to black
+                        borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5), // Set the border color to black
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.blueGrey, width: 2), // Black border when not focused
+                        borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5), // Black border when not focused
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Color(0xFFF50057), width: 2), // Black border when focused
+                        borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5), // Black border when focused
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.red, width: 2), // Red border for error state
+                        borderSide: BorderSide(color: Colors.red, width: 1.5), // Red border for error state
                       ),
                       hintText: "Search city...",
                       hintStyle: TextStyle(

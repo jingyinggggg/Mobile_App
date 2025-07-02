@@ -288,7 +288,7 @@ class PdfInvoiceApi {
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Text(title, style: style),
-        SizedBox(width: 2 * PdfPageFormat.mm),
+        SizedBox(width: 1.5 * PdfPageFormat.mm),
         Text(value),
       ],
     );

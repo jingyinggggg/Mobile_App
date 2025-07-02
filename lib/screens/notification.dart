@@ -72,44 +72,58 @@ class _NotificationScreenState extends State<NotificationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 236, 236, 236),
       resizeToAvoidBottomInset: true,
-      appBar: AppBar(
-        title: const Text("Notification"),
-        centerTitle: true,
-        backgroundColor: const Color(0xFFE57373),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-          fontFamily: 'Inika',
-          fontWeight: FontWeight.bold,
-          fontSize: 20,
-        ),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-          onPressed: () {
-            if(widget.isUser){
-              Navigator.push(
-                context, 
-                MaterialPageRoute(
-                  builder: (context) => UserHomepageScreen(userId: widget.userId)
-                )
-              );
-            } else if (widget.isTA){
-              Navigator.push(
-                context, 
-                MaterialPageRoute(
-                  builder: (context) => TravelAgentHomepageScreen(userId: widget.userId)
-                )
-              );
-            } else if (widget.isAdmin){
-              Navigator.push(
-                context, 
-                MaterialPageRoute(
-                  builder: (context) => AdminHomepageScreen(userId: widget.userId)
-                )
-              );
-            }
-          },
+      
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)], // Soft pink gradient
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+          child: AppBar(
+            title: const Text("Notification"),
+            centerTitle: true,
+            backgroundColor: Colors.transparent, // Makes the gradient visible
+            elevation: 0,
+            titleTextStyle: const TextStyle(
+              color: Colors.black,
+              fontFamily: 'Inika',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
+              onPressed: () {
+                if(widget.isUser){
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(
+                      builder: (context) => UserHomepageScreen(userId: widget.userId)
+                    )
+                  );
+                } else if (widget.isTA){
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(
+                      builder: (context) => TravelAgentHomepageScreen(userId: widget.userId)
+                    )
+                  );
+                } else if (widget.isAdmin){
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(
+                      builder: (context) => AdminHomepageScreen(userId: widget.userId)
+                    )
+                  );
+                }
+              },
+            ),
+          ),
         ),
       ),
       body: isFetching

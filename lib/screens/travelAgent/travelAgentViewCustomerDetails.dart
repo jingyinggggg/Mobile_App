@@ -2,6 +2,7 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:assignment_tripmate/constants.dart';
+import 'package:assignment_tripmate/screens/travelAgent/travelAgentViewBookingDetails.dart';
 import 'package:assignment_tripmate/screens/user/chatDetailsPage.dart';
 import 'package:assignment_tripmate/utils.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -321,43 +322,38 @@ class _TravelAgentViewCustomerDetailsScreenState extends State<TravelAgentViewCu
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 236, 236, 236),
       resizeToAvoidBottomInset: true,
-      appBar: AppBar(
-        title: const Text("Booking"),
-        centerTitle: true,
-        backgroundColor: const Color(0xFFE57373),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-          fontFamily: 'Inika',
-          fontWeight: FontWeight.bold,
-          fontSize: defaultAppBarTitleFontSize,
-        ),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-        actions: [
-          Container(
-            width: 45,
-            child: IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => ChatDetailsScreen(userId: widget.userId, receiverUserId: custData!['id']))
-                );
-              },
-              icon: ImageIcon(
-                AssetImage('images/chat.png'),
-                color: Colors.white,
-                size: 21,
-              ),
-              tooltip: "Chat with customer",
-            )
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)], // Soft pink gradient
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
           ),
-        ],
+          child: AppBar(
+            title: const Text("Booking"),
+            centerTitle: true,
+            backgroundColor: Colors.transparent, // Makes the gradient visible
+            elevation: 0,
+            titleTextStyle: const TextStyle(
+              color: Colors.black,
+              fontFamily: 'Inika',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
+              onPressed: () {
+                
+            Navigator.pop(context);
+              },
+            ),
+          ),
+        ),
       ),
       body: isFetchingCustomerDetails || isFetchingCarBooking || isFetchingTourBooking
           ? Center(child: CircularProgressIndicator(color: primaryColor))

@@ -386,20 +386,22 @@ class _TravelAgentViewAnalyticsChartScreenState extends State<TravelAgentViewAna
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        backgroundColor: Color.fromARGB(255, 241, 246, 249),
+        backgroundColor: Color.fromARGB(255, 236, 236, 236),
         resizeToAvoidBottomInset: true,
+        
         appBar: AppBar(
           title: const Text("Analytics"),
           centerTitle: true,
-          backgroundColor: const Color(0xFFE57373),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
           titleTextStyle: const TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontFamily: 'Inika',
             fontWeight: FontWeight.bold,
             fontSize: defaultAppBarTitleFontSize,
           ),
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
+            icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
             onPressed: () {
               Navigator.push(
                 context,
@@ -410,7 +412,7 @@ class _TravelAgentViewAnalyticsChartScreenState extends State<TravelAgentViewAna
           actions: [
             Theme(
               data: Theme.of(context).copyWith(
-                canvasColor: Colors.black,
+                canvasColor: Colors.white,
                 textTheme: TextTheme(
                   titleMedium: TextStyle(color: Colors.white),
                 ),
@@ -419,11 +421,11 @@ class _TravelAgentViewAnalyticsChartScreenState extends State<TravelAgentViewAna
                 value: selectedYear,
                 items: List.generate(2, (index) {
                   int year = DateTime.now().year + index;
-                  return DropdownMenuItem(value: year, child: Text(year.toString(), style: TextStyle(color: Colors.white)));
+                  return DropdownMenuItem(value: year, child: Text(year.toString(), style: TextStyle(color: Colors.black)));
                 }),
                 onChanged: _onYearChanged,
-                underline: Container(), // Remove underline if preferred
-                iconEnabledColor: Colors.white,
+                underline: Container(),
+                iconEnabledColor: Colors.black,
               ),
             ),
           ],
@@ -448,7 +450,18 @@ class _TravelAgentViewAnalyticsChartScreenState extends State<TravelAgentViewAna
               ),
             ),
           ),
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
+          ),
         ),
+
+        
         body: isFetchingTour || isFetchingCarRental || isFetchingTourList || isFetchingCarRentalList
         ? const Center(child: CircularProgressIndicator(color: primaryColor,))
         : TabBarView(
@@ -481,15 +494,15 @@ class _TravelAgentViewAnalyticsChartScreenState extends State<TravelAgentViewAna
                           prefixIcon: Icon(Icons.search, color: Colors.grey.shade500, size: 15),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                           ),
                           hintText: "Search tour name...",
                           hintStyle: TextStyle(
@@ -538,15 +551,15 @@ class _TravelAgentViewAnalyticsChartScreenState extends State<TravelAgentViewAna
                           prefixIcon: Icon(Icons.search, color: Colors.grey.shade500, size: 15),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+                            borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                           ),
                           hintText: "Search car name...",
                           hintStyle: TextStyle(

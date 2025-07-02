@@ -216,45 +216,42 @@ class _AdminViewBookingListMainpageScreenState extends State<AdminViewBookingLis
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        backgroundColor: Color.fromARGB(255, 241, 246, 249),
+        backgroundColor: Color.fromARGB(255, 236, 236, 236),
         resizeToAvoidBottomInset: true,
         appBar: AppBar(
           title: const Text("Booking"),
           centerTitle: true,
-          backgroundColor: const Color(0xFFE57373),
+          backgroundColor: Colors.transparent, // Transparent to reveal the gradient
+          elevation: 0,
           titleTextStyle: const TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontFamily: 'Inika',
             fontWeight: FontWeight.bold,
-            fontSize: defaultAppBarTitleFontSize,
+            fontSize: 20,
           ),
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
+            icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => AdminHomepageScreen(userId: widget.userId))
+                MaterialPageRoute(builder: (context) => AdminHomepageScreen(userId: widget.userId)),
               );
             },
           ),
           bottom: PreferredSize(
-            preferredSize: Size.fromHeight(50.0),
+            preferredSize: const Size.fromHeight(50.0),
             child: Container(
               height: 50,
               color: Colors.white,
               child: TabBar(
-                tabs: [
-                  Tab(
-                    child: Text("Tour Package/Car Rental"),
-                  ),
-                  Tab(
-                    child: Text("Local Buddy"),
-                  )
+                tabs: const [
+                  Tab(child: Text("Tour Package/Car Rental")),
+                  Tab(child: Text("Local Buddy")),
                 ],
                 labelColor: primaryColor,
                 indicatorColor: primaryColor,
                 indicatorWeight: 2,
-                unselectedLabelColor: Color(0xFFA4B4C0), // Unselected tab text color
+                unselectedLabelColor: Color(0xFFA4B4C0),
                 indicatorPadding: EdgeInsets.zero,
                 indicatorSize: TabBarIndicatorSize.tab,
                 unselectedLabelStyle: TextStyle(fontSize: defaultFontSize),
@@ -262,7 +259,17 @@ class _AdminViewBookingListMainpageScreenState extends State<AdminViewBookingLis
               ),
             ),
           ),
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
+          ),
         ),
+
         body: TabBarView(
           children: [
             Container(
@@ -286,19 +293,19 @@ class _AdminViewBookingListMainpageScreenState extends State<AdminViewBookingLis
                             prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                              borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                              borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+                              borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Colors.red, width: 2),
+                              borderSide: BorderSide(color: Colors.red, width: 1.5),
                             ),
                             hintText: "Search agency name...",
                             hintStyle: TextStyle(
@@ -373,19 +380,19 @@ class _AdminViewBookingListMainpageScreenState extends State<AdminViewBookingLis
                             prefixIcon: Icon(Icons.search, color: Colors.grey.shade500),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                              borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                              borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Color(0xFFF50057), width: 2),
+                              borderSide: BorderSide(color: Color(0xFFF50057), width: 1.5),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Colors.red, width: 2),
+                              borderSide: BorderSide(color: Colors.red, width: 1.5),
                             ),
                             hintText: "Search local buddy name...",
                             hintStyle: TextStyle(

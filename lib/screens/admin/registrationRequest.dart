@@ -113,66 +113,63 @@ class _RegistrationRequesrScreenState extends State<RegistrationRequestScreen> {
   Widget build(BuildContext context) { 
     return DefaultTabController( 
       length: 2, 
-      child: Scaffold( 
-        backgroundColor: Colors.white,
-        appBar: AppBar( 
-          title: Text("Registration Request"), 
+      child: Scaffold(
+        backgroundColor: const Color.fromARGB(255, 236, 236, 236),
+        appBar: AppBar(
+          title: const Text("Registration Request"),
           centerTitle: true,
-          backgroundColor: const Color(0xFFE57373),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
           titleTextStyle: const TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontFamily: 'Inika',
             fontWeight: FontWeight.bold,
             fontSize: 20,
           ),
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
+            icon: const Icon(Icons.arrow_back_rounded, color: Colors.black),
             onPressed: () {
               Navigator.push(
-                context, 
-                MaterialPageRoute(builder: (context) => AdminHomepageScreen(userId: widget.userId))
+                context,
+                MaterialPageRoute(
+                  builder: (context) => AdminHomepageScreen(userId: widget.userId),
+                ),
               );
             },
           ),
           bottom: PreferredSize(
-            preferredSize: Size.fromHeight(50.0), // Adjust the height as needed
+            preferredSize: const Size.fromHeight(50.0),
             child: Container(
               height: 50,
-              color: Colors.white, // Set the background color of the TabBar
+              color: Colors.white,
               child: TabBar(
                 tabs: [
                   Tab(
-                    child: 
-                    Container(
-                      padding: EdgeInsets.all(8),
-                      child: Row(
-                        children: [
-                          ImageIcon(
-                            AssetImage("images/travel-agent.png"),
-                            size: 35,
-                          ),
-                          SizedBox(width: 8),
-                          Text(
-                            "Travel Agent",
-                            style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold), 
-                          ),
-                        ],
-                      ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const ImageIcon(
+                          AssetImage("images/travel-agent.png"),
+                          size: 30,
+                        ),
+                        const SizedBox(width: 8),
+                        const Text(
+                          "Travel Agent",
+                          style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                   Tab(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Container(
-                          padding: EdgeInsets.all(8),
-                          child: ImageIcon(
-                            AssetImage("images/tour-guide.png"),
-                            size: 35,
-                          ),
+                        const ImageIcon(
+                          AssetImage("images/tour-guide.png"),
+                          size: 30,
                         ),
-                        SizedBox(width: 8),
-                        Text(
+                        const SizedBox(width: 8),
+                        const Text(
                           "Local Buddy",
                           style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                         ),
@@ -180,48 +177,76 @@ class _RegistrationRequesrScreenState extends State<RegistrationRequestScreen> {
                     ),
                   ),
                 ],
-                labelColor: Color(0xFFF50057),
-                indicatorColor: Color(0xFFF50057),
+                labelColor: const Color(0xFFF50057),
+                indicatorColor: const Color(0xFFF50057),
                 indicatorWeight: 3,
-                unselectedLabelColor: Color(0xFFA4B4C0), // Unselected tab text color
+                unselectedLabelColor: const Color(0xFFA4B4C0),
                 indicatorPadding: EdgeInsets.zero,
                 indicatorSize: TabBarIndicatorSize.tab,
                 unselectedLabelStyle: TextStyle(fontSize: defaultFontSize),
               ),
             ),
           ),
-        ), 
-        body: TabBarView( 
-          children: [ 
-            Container(
-              padding: EdgeInsets.only(right: 10, left: 10, top: 10), // Adjust the top padding as needed
-              child: isFetchTravelAgentList
-              ? Center(child: CircularProgressIndicator(color: primaryColor))
-              : _TAList.isEmpty
-                ? Center(child: Text('No pending review registration for travel agent.', style: TextStyle(fontSize: defaultFontSize, color: Colors.black)))
-                : ListView.builder(
-                    itemCount: _TAList.length,
-                    itemBuilder: (context, index) {
-                      return TAComponent(travelAgent: _TAList[index]);
-                    }
-                  ),
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
             ),
-            Container(
-              padding: EdgeInsets.only(right: 10, left: 10, top: 10),
-              child: isFetchingLocalBuddyList
-              ? Center(child: CircularProgressIndicator(color: primaryColor))
-              : _LocalBuddyList.isEmpty
-                ? Center(child: Text('No pending review registration for local buddy.', style: TextStyle(fontSize: defaultFontSize, color: Colors.black)))
-                : ListView.builder(
-                    itemCount: _LocalBuddyList.length,
-                    itemBuilder: (context, index) {
-                      return LocalBuddyComponent(localBuddy: _LocalBuddyList[index]);
-                    }
-                  ),
-            )
-          ], 
+          ),
         ),
-      ), 
+        body: TabBarView(
+          children: [
+            // Travel Agent Tab
+            Container(
+              padding: const EdgeInsets.only(right: 10, left: 10, top: 10),
+              child: isFetchTravelAgentList
+                  ? Center(child: CircularProgressIndicator(color: primaryColor))
+                  : _TAList.isEmpty
+                      ? Center(
+                          child: Text(
+                            'No pending review registration for travel agent.',
+                            style: TextStyle(
+                              fontSize: defaultFontSize,
+                              color: Colors.black,
+                            ),
+                          ),
+                        )
+                      : ListView.builder(
+                          itemCount: _TAList.length,
+                          itemBuilder: (context, index) {
+                            return TAComponent(travelAgent: _TAList[index]);
+                          },
+                        ),
+            ),
+            // Local Buddy Tab
+            Container(
+              padding: const EdgeInsets.only(right: 10, left: 10, top: 10),
+              child: isFetchingLocalBuddyList
+                  ? Center(child: CircularProgressIndicator(color: primaryColor))
+                  : _LocalBuddyList.isEmpty
+                      ? Center(
+                          child: Text(
+                            'No pending review registration for local buddy.',
+                            style: TextStyle(
+                              fontSize: defaultFontSize,
+                              color: Colors.black,
+                            ),
+                          ),
+                        )
+                      : ListView.builder(
+                          itemCount: _LocalBuddyList.length,
+                          itemBuilder: (context, index) {
+                            return LocalBuddyComponent(localBuddy: _LocalBuddyList[index]);
+                          },
+                        ),
+            ),
+          ],
+        ),
+      )
+
     ); 
   } 
 

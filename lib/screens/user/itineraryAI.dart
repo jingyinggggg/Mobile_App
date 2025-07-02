@@ -359,7 +359,7 @@ class _AIItineraryScreenState extends State<AIItineraryScreen> {
                             ),
                           ),
                         ],
-                        const SizedBox(width: 20),
+                        const SizedBox(width: 1.50),
                         if (_currentPage < questions.length - 1) ...[
                           ElevatedButton(
                             onPressed: () {

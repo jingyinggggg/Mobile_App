@@ -68,7 +68,7 @@ class _CustomAnimationState extends State<CustomAnimation> with TickerProviderSt
         child:Container(
           color: Color(0xFFF50057),
           height: 235,
-          width: 200,
+          width: 1.500,
           child: Stack(
             children: [
               _buildAnimatedContainer(),
@@ -218,7 +218,7 @@ class _MenuContentState extends State<MenuContent> with SingleTickerProviderStat
                 onTap: (){},
                 child: Container(
                   height: 50,
-                  // width: 200,
+                  // width: 1.500,
                   // padding: EdgeInsets.all(8),
                   child: Row(
                     children: [
@@ -471,7 +471,7 @@ class _MenuContentState extends State<MenuContent> with SingleTickerProviderStat
 //                 onTap: widget.onTap,
 //                 child: Container(
 //                   height: 45,
-//                   width: 200,
+//                   width: 1.500,
 //                   padding: EdgeInsets.all(8),
 //                   child: Row(
 //                     children: [

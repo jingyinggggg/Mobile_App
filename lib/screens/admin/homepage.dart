@@ -26,7 +26,7 @@ class _AdminHomepageScreenState extends State<AdminHomepageScreen> {
   bool hasNoti = false;
 
   final List<String> _screenTitles = [
-    "Tripmate",
+    "TripTop",
     "Messages",
     "Account",
   ];
@@ -190,45 +190,58 @@ class _AdminHomepageScreenState extends State<AdminHomepageScreen> {
     ];
 
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 236, 236, 236),
       resizeToAvoidBottomInset: true,
-      appBar: AppBar(
-        title: Text(_screenTitles[currentPageIndex]),
-        centerTitle: true,
-        backgroundColor: const Color(0xFFE57373),
-        titleTextStyle: const TextStyle(
-          color: Colors.white,
-          fontFamily: 'Inika',
-          fontWeight: FontWeight.bold,
-          fontSize: 20,
-        ),
-        automaticallyImplyLeading: false,
-        actions: [
-          Stack(
-            children: [
-              IconButton(
-                icon: const Icon(Icons.notifications, color: Colors.white),
-                onPressed: () {
-                  Navigator.push(
-                    context, 
-                    MaterialPageRoute(builder: (context) => NotificationScreen(userId: widget.userId, isAdmin: true,))
-                  );
-                },
-              ),
-              if (hasNoti)
-                Positioned(
-                  right:14,
-                  top:12,
-                  child: Container(
-                    padding: const EdgeInsets.all(4),
-                    decoration: BoxDecoration(
-                      color: Colors.red,
-                      shape: BoxShape.circle,
-                    ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFFE57373), Color.fromARGB(255, 236, 236, 236)], // Soft pink gradient
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+          child: AppBar(
+            automaticallyImplyLeading: false,
+            title: const Text("TripTop"), 
+            backgroundColor: Colors.transparent, // Makes the gradient visible
+            elevation: 0,
+            titleTextStyle: const TextStyle(
+              color: Colors.black,
+              fontFamily: 'Inika',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+            actions: [
+              Stack(
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.notifications, color: Colors.black),
+                    onPressed: () {
+                      Navigator.push(
+                        context, 
+                        MaterialPageRoute(builder: (context) => NotificationScreen(userId: widget.userId, isAdmin: true,))
+                      );
+                    },
                   ),
-                ),
+                  if (hasNoti)
+                    Positioned(
+                      right:14,
+                      top:12,
+                      child: Container(
+                        padding: const EdgeInsets.all(4),
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          shape: BoxShape.circle,
+                        ),
+                      ),
+                    ),
+                ],
+              ),
             ],
           ),
-        ],
+        ),
       ),
       bottomNavigationBar: AdminCustomBottomNavBar(
         currentIndex: currentPageIndex,
@@ -250,11 +263,10 @@ class _AdminHomepageScreenState extends State<AdminHomepageScreen> {
         backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
-          side: const BorderSide(color: Color(0xFFF50057), width: 2),
+          side: const BorderSide(color: Color(0xFFF50057), width: 1.5),
         ),
         minimumSize: Size(screenWidth * 0.4, screenWidth * 0.4), // 40% of screen width for the button
         elevation: 10,
-        shadowColor: const Color(0xFFF50057),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

@@ -25,6 +25,7 @@ class _AdminAccountScreenState extends State<AdminAccountScreen> {
     final screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 236, 236, 236),
       resizeToAvoidBottomInset: true,
       body: StreamBuilder<DocumentSnapshot>(
         stream: FirebaseFirestore.instance

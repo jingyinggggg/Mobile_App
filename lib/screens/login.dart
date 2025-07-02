@@ -22,7 +22,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
 
   // Add email and password controllers
-  final TextEditingController emailController = TextEditingController(text: "angieng@forevertravel.com");
+  final TextEditingController emailController = TextEditingController(text: "admin@tripmate.com");
   final TextEditingController passwordController = TextEditingController(text: "12345678@");
 
   @override
@@ -366,7 +366,7 @@ class _LoginScreenState extends State<LoginScreen> {
   //       });
   //     },
   //     activeColor: Color(0xFFF50057), // Color when the checkbox is checked
-  //     side: BorderSide(color: Color(0xFFF50057), width: 2.0), // Border color and width
+  //     side: BorderSide(color: Color(0xFFF50057), width: 1.5.0), // Border color and width
   //   );
   // }
 

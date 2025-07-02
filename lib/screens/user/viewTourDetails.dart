@@ -309,7 +309,7 @@ class _ViewTourDetailsScreenState extends State<ViewTourDetailsScreen> with Widg
       appBar: AppBar(
         title: const Text("Group Tour"),
         centerTitle: true,
-        backgroundColor: const Color(0xFFE57373),
+        backgroundColor: const Color(0xFF749CB9),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontFamily: 'Inika',

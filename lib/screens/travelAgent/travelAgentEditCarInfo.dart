@@ -809,7 +809,7 @@ class _TravelAgentEditCarInfoScreenState extends State<TravelAgentEditCarInfoScr
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
-                border: Border.all(color: const Color(0xFFF50057), width: 2),
+                border: Border.all(color: const Color(0xFFF50057), width: 1.5),
               ),
               child: Image.memory(
                 _carImage!,
