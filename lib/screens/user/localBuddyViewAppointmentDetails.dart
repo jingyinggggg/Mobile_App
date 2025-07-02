@@ -414,7 +414,7 @@ class _LocalBuddyViewAppointmentDetailsScreenState extends State<LocalBuddyViewA
         width: width,
         height: height,
         placeholder: (context, url) => Center(
-          child: CircularProgressIndicator(),
+          child: CircularProgressIndicator(color: primaryColor,),
         ),
         errorWidget: (context, url, error) => Icon(Icons.error),
         fit: BoxFit.cover,

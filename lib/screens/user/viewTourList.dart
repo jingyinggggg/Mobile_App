@@ -1,3 +1,4 @@
+import 'package:assignment_tripmate/constants.dart';
 import 'package:assignment_tripmate/screens/user/viewCity.dart';
 import 'package:assignment_tripmate/screens/user/viewTourDetails.dart';
 import 'package:assignment_tripmate/utils.dart';
@@ -133,7 +134,7 @@ class _ViewTourListScreenState extends State<ViewTourListScreen> {
         children: [
           if (_isLoadingCityImage) // Show loader while fetching the city image
             const Center(
-              child: CircularProgressIndicator(),
+              child: CircularProgressIndicator(color: primaryColor,),
             )
           else if (cityData?['cityImage'] != null) ...[
             Container(
@@ -205,7 +206,7 @@ class _ViewTourListScreenState extends State<ViewTourListScreen> {
           ],
           _isLoadingTourList // Show loader while fetching the tour list
           ? const Center(
-              child: CircularProgressIndicator(),
+              child: CircularProgressIndicator(color: primaryColor,),
             )
           : hasPackage
           ? Container(

@@ -19,32 +19,19 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("images/welcome_background.png"),
+                image: AssetImage("images/welcome_background.jpg"),
                 fit: BoxFit.cover,
               ),
             ),
           ),
           // White container with opacity
           Container(
-            color: const Color(0xFFEDF2F6).withOpacity(0.4),
+            // color: const Color(0xFFEDF2F6).withOpacity(0.2),
             child: Stack(
               children: [
-                // Logo
-                Positioned(
-                  top: 180, // Adjust the top position as needed
-                  left: 0,
-                  right: 0,
-                  child: Center(
-                    child: Image.asset(
-                      'images/logo.png', // Your logo asset
-                      height: 100,
-                    ),
-                  ),
-                ),
-                
                 // App name
                 const Positioned(
-                  top: 300, // Adjust the top position as needed
+                  top: 250, // Adjust the top position as needed
                   left: 0,
                   right: 0,
                   child: Center(

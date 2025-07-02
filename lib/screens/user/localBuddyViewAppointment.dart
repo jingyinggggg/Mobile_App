@@ -152,7 +152,7 @@ class _LocalBuddyViewAppointmentScreenState
         ],
       ),
       body: isFetchLoading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(color: primaryColor,))
           : Column(
               children: [
                 _buildCalendarHeader(),
@@ -262,7 +262,7 @@ class _LocalBuddyViewAppointmentScreenState
             // If today but not selected
             if (!isSelected && isToday) {
               bgColor = null;
-              textColor = Colors.blue;
+              textColor = primaryColor;
             }
 
             return GestureDetector(
@@ -318,12 +318,12 @@ class _LocalBuddyViewAppointmentScreenState
                 margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Colors.blue.shade50, // Light blue background
+                  color: Color.fromARGB(255, 255, 215, 215),
                   borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: Colors.blue.shade300, width: 1),
+                  border: Border.all(color: primaryColor, width: 1),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.blue.withOpacity(0.2),
+                      color: primaryColor.withOpacity(0.2),
                       blurRadius: 6,
                       offset: const Offset(2, 3),
                     ),

@@ -355,7 +355,7 @@ class _CarRentalDetailsScreenState extends State<CarRentalDetailsScreen> {
 
       ),
       body: isLoading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(color: primaryColor,))
           : Stack(
               children: [
                 Container(
@@ -852,7 +852,7 @@ class _CarRentalDetailsScreenState extends State<CarRentalDetailsScreen> {
                   fit: BoxFit.contain,
                   loadingBuilder: (context, child, loadingProgress) {
                     if (loadingProgress == null) return child;
-                    return Center(child: CircularProgressIndicator());
+                    return Center(child: CircularProgressIndicator(color: primaryColor,));
                   },
                   errorBuilder: (context, error, stackTrace) {
                     return Center(child: Text('Error loading image'));

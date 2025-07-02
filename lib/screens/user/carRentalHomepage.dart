@@ -228,7 +228,7 @@ class _CarRentalHomepageScreenState extends State<CarRentalHomepageScreen>{
           ),
           Expanded(
             child: isLoading
-              ? Center(child: CircularProgressIndicator())
+              ? Center(child: CircularProgressIndicator(color: primaryColor,))
               : _foundedCar.isNotEmpty
                 ? Padding(
                   padding: EdgeInsets.only(left: 10, right: 10, bottom: 10, top: 15),
