@@ -327,7 +327,7 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
                     Row(
                       children: [
                         Container(
-                          width: 1.55,
+                          width: 15,
                           child: IconButton(
                             icon: isPublished ? Icon(Icons.check_circle_rounded) : Icon(Icons.not_interested_rounded),
                             color: isPublished ? Colors.green : Colors.grey.shade500,
@@ -337,9 +337,9 @@ class _TravelAgentViewTourListScreenState extends State<TravelAgentViewTourListS
                             },
                           ),
                         ),
-                        SizedBox(width: 10),
+                        SizedBox(width: 15),
                         Container(
-                          width: 1.55,
+                          width: 15,
                           child: IconButton(
                             onPressed: (){
                               Navigator.push(

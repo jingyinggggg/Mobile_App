@@ -410,15 +410,13 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("images/welcome_background.png"),
+                image: AssetImage("images/welcome_background.jpg"),
                 fit: BoxFit.cover,
               ),
             ),
           ),
-          // White container with opacity
           Container(
             height: double.infinity,
-            color: const Color(0xFFEDF2F6).withOpacity(0.6),
             child: SafeArea(
               child: SingleChildScrollView(
                 child: Padding(
@@ -443,17 +441,10 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(height: screenHeight * 0.07), // Responsive height
+                      SizedBox(height: screenHeight * 0.15), // Responsive height
                       Container(
                         child: Column(
                           children: [
-                            Center(
-                              child: Image.asset(
-                                'images/logo.png',
-                                height: screenWidth * 0.3, // Responsive image height
-                              ),
-                            ),
-                            SizedBox(height: screenHeight * 0.03), // Responsive height
                             const Center(
                               child: Text(
                                 'TripTop',

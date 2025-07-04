@@ -207,7 +207,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
             borderRadius: BorderRadius.circular(10),
             side: BorderSide(color: Color(0xFFF50057), width: 1.5),
           ),
-          padding: EdgeInsets.all(20),
+          padding: EdgeInsets.all(16),
         ),
         child: Column(
           children: [
@@ -218,7 +218,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
             Text(
               label,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 12, color: Color(0xFFF50057)),
+              style: TextStyle(fontSize: 11, color: Color(0xFFF50057)),
             ),
           ],
         ),
@@ -252,7 +252,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                 children: [
                   buildFeatureButton(
                     icon: AssetImage("images/car-rental.png"),
-                    label: "Car Rental",
+                    label: "Car \nRental",
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -282,7 +282,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
                   ),
                   buildFeatureButton(
                     icon: null,
-                    label: "Translator",
+                    label: "Language Translator",
                     isIcon: true,
                     onPressed: () {
                       Navigator.push(

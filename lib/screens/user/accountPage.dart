@@ -35,7 +35,10 @@ class _AccountScreenState extends State<AccountScreen> {
       CollectionReference ref = FirebaseFirestore.instance.collection('localBuddy');
 
       // Query the collection for documents where userID matches the current user's ID
-      QuerySnapshot querySnapshot = await ref.where('userID', isEqualTo: widget.userId).get();
+      QuerySnapshot querySnapshot = await ref
+        .where('userID', isEqualTo: widget.userId)
+        .where('registrationStatus', isEqualTo: 2)
+        .get();
 
       // Check if any documents were found
       if (querySnapshot.docs.isNotEmpty) {

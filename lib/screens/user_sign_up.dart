@@ -272,7 +272,7 @@ class _UserSignUpScreenState extends State<UserSignUpScreen> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("images/welcome_background.png"),
+                image: AssetImage("images/welcome_background.jpg"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -281,7 +281,6 @@ class _UserSignUpScreenState extends State<UserSignUpScreen> {
           // White container with opacity
           Container(
             height: double.infinity,
-            color: const Color(0xFFEDF2F6).withOpacity(0.6),
             child: SafeArea(
               child: SingleChildScrollView(
                 child: Column(

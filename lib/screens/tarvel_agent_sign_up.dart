@@ -301,16 +301,14 @@ class _TravelAgentSignUpScreenState extends State<TravelAgentSignUpScreen> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("images/welcome_background.png"),
+                image: AssetImage("images/welcome_background.jpg"),
                 fit: BoxFit.cover,
               ),
             ),
           ),
 
-          // White container with opacity
           Container(
             height: double.infinity,
-            color: const Color(0xFFEDF2F6).withOpacity(0.6),
             child: SafeArea(
               child: SingleChildScrollView(
                 child: Column(

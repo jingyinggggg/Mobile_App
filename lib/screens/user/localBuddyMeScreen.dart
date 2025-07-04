@@ -126,7 +126,7 @@ class _LocalBuddyMeScreenState extends State<LocalBuddyMeScreen> {
                           
                           if(localBuddyData?['registrationStatus'] == null)
                             Container(
-                              width: 1.500,
+                              width: 200,
                               height: 50,
                               margin: EdgeInsets.only(top: 20),
                               child: ElevatedButton(
@@ -158,7 +158,7 @@ class _LocalBuddyMeScreenState extends State<LocalBuddyMeScreen> {
                           
                           if(localBuddyData?['registrationStatus'] == 3)
                             Container(
-                              width: 1.500,
+                              width: 200,
                               height: 50,
                               margin: EdgeInsets.only(top: 20),
                               child: ElevatedButton(

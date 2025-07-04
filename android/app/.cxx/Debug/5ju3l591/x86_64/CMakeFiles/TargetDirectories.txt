@@ -1,0 +1,2 @@
+C:/Users/jingy/Desktop/SEM 6/6002CEM MOBILE APP/ASSIGNMENT/assignment_tripmate/android/app/.cxx/Debug/5ju3l591/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/jingy/Desktop/SEM 6/6002CEM MOBILE APP/ASSIGNMENT/assignment_tripmate/android/app/.cxx/Debug/5ju3l591/x86_64/CMakeFiles/rebuild_cache.dir

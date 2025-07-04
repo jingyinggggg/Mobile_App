@@ -423,20 +423,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        // Row(
-                        //   children: [
-                        //     remember_me(),
-                        //     const Text(
-                        //       "Remember me",
-                        //       style: TextStyle(
-                        //         fontSize: 12,
-                        //         fontFamily: 'Inika',
-                        //         fontWeight: FontWeight.w900,
-                        //         color: Colors.black87,
-                        //       ),
-                        //     )
-                        //   ],
-                        // ),
                         TextButton(
                           onPressed: () {
                             // Handle button press to navigate to the next page
@@ -450,8 +436,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             style: TextStyle(
                               fontSize: 12,
                               fontFamily: 'Inika',
-                              fontWeight: FontWeight.w900,
-                              color: Colors.black87,
+                              fontWeight: FontWeight.w300,
+                              color: Colors.white,
                               fontStyle: FontStyle.italic
                             ),
                           )
@@ -501,8 +487,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: TextStyle(
                             fontSize: 15,
                             fontFamily: "Inika",
-                            fontWeight: FontWeight.w800,
-                            color: Colors.black,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.white,
                           ),
                         ),
                         Row(
@@ -521,8 +507,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontFamily: "Inika",
-                                  fontWeight: FontWeight.w900,
-                                  color: Colors.black,
+                                  fontWeight: FontWeight.w300,
+                                  color: Colors.white,
                                   fontStyle: FontStyle.italic,
                                 ),
                               ),
@@ -532,8 +518,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               style: TextStyle(
                                 fontSize: 14,
                                 fontFamily: "Inika",
-                                fontWeight: FontWeight.w800,
-                                color: Colors.black,
+                                fontWeight: FontWeight.w300,
+                                color: Colors.white,
                               ),
                             ),
                             TextButton(
@@ -549,8 +535,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontFamily: "Inika",
-                                  fontWeight: FontWeight.w900,
-                                  color: Colors.black,
+                                  fontWeight: FontWeight.w300,
+                                  color: Colors.white,
                                   fontStyle: FontStyle.italic,
                                 ),
                               ),
