@@ -456,7 +456,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                             SizedBox(height: screenHeight * 0.03), // Responsive height
                             const Center(
                               child: Text(
-                                'TripMate',
+                                'TripTop',
                                 style: TextStyle(
                                   fontSize: 30,
                                   fontWeight: FontWeight.bold,

@@ -36,7 +36,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   right: 0,
                   child: Center(
                     child: Text(
-                      'TripMate',
+                      'TripTop',
                       style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,

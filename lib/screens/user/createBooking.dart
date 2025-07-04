@@ -897,58 +897,6 @@ class _createBookingScreenState extends State<createBookingScreen> {
               ),
             ),
           );
-
-          // Use Future.microtask to show the loading dialog after the previous dialog is closed
-          // Future.microtask(() {
-          //   showLoadingDialog(context, "Generating Invoice...");
-          // });
-
-          // final date = DateTime.now();
-          // final DateFormat dateFormat = DateFormat('dd/MM/yyyy');
-
-          // final invoice = Invoice(
-          //   supplier: Supplier(
-          //     name: "Admin",
-          //     address: "admin@tripmate.com",
-          //   ),
-          //   customer: Customer(
-          //     name: _userData['name'] ?? "Unknown Customer",
-          //     address: _userData['address'] ?? "Unknown Customer Address",
-          //   ),
-          //   info: InvoiceInfo(
-          //     date: date,
-          //     description: "You have paid the bill. Below is the invoice summary:",
-          //     number: '${DateTime.now().year}-$id',
-          //   ),
-          //   // Wrap the single InvoiceItem in a list
-          //   items: [
-          //     InvoiceItem(
-          //       description: "Local Buddy: ${_localBuddy!.localBuddyName} ($selectedLocalBuddyBookingDateString)",
-          //       quantity: LBDifferenceInDays!,
-          //       unitPrice: _localBuddy!.price!.toInt(),
-          //       total:  LBTotalPrice ?? 0.0,
-          //     ),
-          //   ],
-          // );
-
-          // // Perform some async operation
-          // await generateInvoice(id, invoice, "Local Buddy", "localBuddyBooking", "invoice", false, false, false);
-
-          // // After the operation is done, hide the loading dialog
-          // Navigator.of(context).pop(); // This will close the loading dialog
-
-          // // Navigate to the homepage after PDF viewer
-          // Future.delayed(Duration(milliseconds: 500), () {
-          //   Navigator.pushReplacement(
-          //     context,
-          //     MaterialPageRoute(
-          //       builder: (context) => UserHomepageScreen(
-          //         userId: widget.userId,
-          //         currentPageIndex: 3,
-          //       ),
-          //     ),
-          //   );
-          // });
         },
         textButton: "Done"
       );
@@ -995,7 +943,7 @@ class _createBookingScreenState extends State<createBookingScreen> {
                     Text("Please transfer $amount to the following account:", textAlign: TextAlign.justify),
                     const SizedBox(height: 8),
                     const Text(
-                      "Bank: Hong Leong Bank\nAccount Name: TripMate\nAccount Number: 1234567890",
+                      "Bank: Hong Leong Bank\nAccount Name: TripTop\nAccount Number: 1234567890",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 20),

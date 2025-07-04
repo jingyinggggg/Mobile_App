@@ -36,7 +36,7 @@ class _UserHomepageScreenState extends State<UserHomepageScreen> {
   List<Map<String, dynamic>> localBuddyList = [];
 
   final List<String> _screenTitles = [
-    "Tripmate",
+    "TripTop",
     "Itinerary",
     "Messages",
     "Bookings",

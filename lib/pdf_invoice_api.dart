@@ -74,7 +74,7 @@ class PdfInvoiceApi {
     children: [
       SizedBox(height: 1 * PdfPageFormat.cm),
       Text(
-        "TripMate",
+        "TripTop",
         style: TextStyle(fontSize: defaultLabelFontSize, fontWeight: FontWeight.bold)
       ),
       SizedBox(height: 10),

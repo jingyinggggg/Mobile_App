@@ -1353,7 +1353,7 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
                     Text("Please transfer $amount to the following account:", textAlign: TextAlign.justify),
                     const SizedBox(height: 8),
                     const Text(
-                      "Bank: Hong Leong Bank\nAccount Name: TripMate\nAccount Number: 1234567890",
+                      "Bank: Hong Leong Bank\nAccount Name: TripTop\nAccount Number: 1234567890",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 20),

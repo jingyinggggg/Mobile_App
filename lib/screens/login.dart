@@ -22,7 +22,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
 
   // Add email and password controllers
-  final TextEditingController emailController = TextEditingController(text: "admin@tripmate.com");
+  final TextEditingController emailController = TextEditingController(text: "admin@triptop.com");
   final TextEditingController passwordController = TextEditingController(text: "12345678@");
 
   @override
@@ -400,7 +400,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(height: screenHeight * 0.3), // Responsive height
                     const Center(
                       child: Text(
-                        'TripMate',
+                        'TripTop',
                         style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.bold,

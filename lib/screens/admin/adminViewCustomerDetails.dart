@@ -587,7 +587,7 @@ class _AdminViewCustomerDetailsScreenState extends State<AdminViewCustomerDetail
           final invoice = Invoice(
             supplier: Supplier(
               name: "Admin",
-              address: "admin@tripmate.com",
+              address: "admin@triptop.com",
             ),
             customer: Customer(
               name: custData!['name'],
@@ -772,7 +772,7 @@ class _AdminViewCustomerDetailsScreenState extends State<AdminViewCustomerDetail
       final invoice = Invoice(
         supplier: Supplier(
           name: "Admin",
-          address: "admin@tripmate.com",
+          address: "admin@triptop.com",
         ),
         customer: Customer(
           name: custData!['name'],
@@ -853,7 +853,7 @@ class _AdminViewCustomerDetailsScreenState extends State<AdminViewCustomerDetail
       final invoice = Invoice(
         supplier: Supplier(
           name: "Admin",
-          address: "admin@tripmate.com",
+          address: "admin@triptop.com",
         ),
         customer: Customer(
           name: custData!['name'],
@@ -938,7 +938,7 @@ class _AdminViewCustomerDetailsScreenState extends State<AdminViewCustomerDetail
       final invoice = Invoice(
         supplier: Supplier(
           name: "Admin",
-          address: "admin@tripmate.com",
+          address: "admin@triptop.com",
         ),
         customer: Customer(
           name: custData!['name'],
@@ -1035,7 +1035,7 @@ class _AdminViewCustomerDetailsScreenState extends State<AdminViewCustomerDetail
       final invoice = Invoice(
         supplier: Supplier(
           name: "Admin",
-          address: "admin@tripmate.com",
+          address: "admin@triptop.com",
         ),
         customer: Customer(
           name: custData!['name'],

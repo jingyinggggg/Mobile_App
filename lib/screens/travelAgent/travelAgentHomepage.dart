@@ -27,7 +27,7 @@ class _TravelAgentHomepageScreenState extends State<TravelAgentHomepageScreen> {
   bool hasNoti = false;
 
   final List<String> _screenTitles = [
-    "Tripmate",
+    "TripTop",
     "Messages",
     "Account",
   ];

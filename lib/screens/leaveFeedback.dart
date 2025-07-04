@@ -108,9 +108,9 @@ class _FeedbackScreenState extends State<FeedbackScreen>{
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Text(
-                      """Thank you for using TripMate. This page is dedicated to gathering your valuable insights and suggestions to help us enhance your experience. Your feedback is crucial in making TripMate more tailored to your travel needs and preferences. Whether it's about the features, user interface, or any improvements you'd like to see, we want to hear from you.
+                      """Thank you for using TripTop. This page is dedicated to gathering your valuable insights and suggestions to help us enhance your experience. Your feedback is crucial in making TripTop more tailored to your travel needs and preferences. Whether it's about the features, user interface, or any improvements you'd like to see, we want to hear from you.
                       
-                      Let us know what you love, what could be better, and any ideas you have for making TripMate the ultimate travel companion. Your input helps us innovate and grow, ensuring that our platform continually evolves to provide the best service possible.
+                      Let us know what you love, what could be better, and any ideas you have for making TripTop the ultimate travel companion. Your input helps us innovate and grow, ensuring that our platform continually evolves to provide the best service possible.
                       """,
                       style: TextStyle(
                         fontSize: defaultFontSize,
@@ -178,7 +178,7 @@ class _FeedbackScreenState extends State<FeedbackScreen>{
         fontSize: defaultFontSize,
       ),
       decoration: InputDecoration(
-        hintText: 'Write down any doubt or any improvement for TripMate...',
+        hintText: 'Write down any doubt or any improvement for TripTop...',
         labelText: 'Feedback',
         filled: true,
         fillColor: Colors.white,

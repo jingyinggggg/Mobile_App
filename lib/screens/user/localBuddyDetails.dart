@@ -291,7 +291,7 @@ class _LocalBuddyDetailsScreenState extends State<LocalBuddyDetailsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final String shareLink = 'https://tripmate.com/localBuddyDetails/${widget.userId}/${widget.localBuddyId}/true';
+    final String shareLink = 'https://triptop.com/localBuddyDetails/${widget.userId}/${widget.localBuddyId}/true';
 
     return Scaffold(
       resizeToAvoidBottomInset: true,
