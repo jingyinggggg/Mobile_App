@@ -62,7 +62,7 @@ Future<void> _fetchItinerary(String itineraryId) async {
 
   @override
   Widget build(BuildContext context) {
-    final String shareLink = 'https://triptop.com/viewAIItinerary/${widget.userId}/${widget.itineraryID}/true';
+    final String shareLink = 'https://tripmate.com/viewAIItinerary/${widget.userId}/${widget.itineraryID}/true';
 
     return Scaffold(
       resizeToAvoidBottomInset: true,

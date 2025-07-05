@@ -299,7 +299,7 @@ class _ViewTourDetailsScreenState extends State<ViewTourDetailsScreen> with Widg
   @override
   Widget build(BuildContext context) {
     
-    final String shareLink = 'https://triptop.com/viewTourDetails/${widget.userId}/${widget.countryName}/${widget.cityName}/${widget.tourID}/true';
+    final String shareLink = 'https://tripmate.com/viewTourDetails/${widget.userId}/${widget.countryName}/${widget.cityName}/${widget.tourID}/true';
 
     print(widget.fromAppLink);
     return Scaffold(

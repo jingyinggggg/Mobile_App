@@ -140,7 +140,7 @@ class _MainAppState extends State<MainApp> {
   void _handleDeepLink(Uri uri) {
     print('Url: ${uri.toString()}');
     
-    if (uri.pathSegments.isNotEmpty && uri.host == 'triptop.com') {
+    if (uri.pathSegments.isNotEmpty && uri.host == 'tripmate.com') {
       print('Host and path segments match');
       
       final path = uri.pathSegments[0];

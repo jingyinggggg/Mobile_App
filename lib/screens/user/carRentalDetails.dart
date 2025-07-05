@@ -264,7 +264,7 @@ class _CarRentalDetailsScreenState extends State<CarRentalDetailsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final String shareLink = 'https://triptop.com/carRentalDetails/${widget.userId}/${widget.carId}/true';
+    final String shareLink = 'https://tripmate.com/carRentalDetails/${widget.userId}/${widget.carId}/true';
     return Scaffold(
       resizeToAvoidBottomInset: true,
       backgroundColor: Colors.white,
